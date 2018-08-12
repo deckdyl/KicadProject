@@ -1,0 +1,768 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Isaac FYP-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "FYP MCU Section"
+Date "2016-10-06"
+Rev "2"
+Comp "Singapore Polytechnic"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Header_1X2 PWR1
+U 1 1 57F5285C
+P 1250 1650
+F 0 "PWR1" H 1225 1800 60  0000 C CNN
+F 1 "Header_1X2" H 1400 1800 60  0001 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 1250 1650 60  0001 C CNN
+F 3 "" H 1250 1650 60  0000 C CNN
+	1    1250 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 57F52939
+P 2500 2000
+F 0 "#PWR01" H 2500 1750 50  0001 C CNN
+F 1 "GND" H 2500 1850 50  0000 C CNN
+F 2 "" H 2500 2000 50  0000 C CNN
+F 3 "" H 2500 2000 50  0000 C CNN
+	1    2500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +15V #PWR02
+U 1 1 57F5294F
+P 1650 1300
+F 0 "#PWR02" H 1650 1150 50  0001 C CNN
+F 1 "+15V" H 1650 1440 50  0000 C CNN
+F 2 "" H 1650 1300 50  0000 C CNN
+F 3 "" H 1650 1300 50  0000 C CNN
+	1    1650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 57F5299F
+P 1650 1650
+F 0 "C1" H 1675 1750 50  0000 L CNN
+F 1 "100uF" H 1675 1550 50  0000 L CNN
+F 2 "Custom Footprint:Cap_Pol_Radial_D8_P2" H 1650 1650 50  0001 C CNN
+F 3 "" H 1650 1650 50  0000 C CNN
+	1    1650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 57F52A00
+P 2000 1650
+F 0 "C2" H 2025 1750 50  0000 L CNN
+F 1 "100nF" H 2025 1550 50  0000 L CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 2038 1500 50  0001 C CNN
+F 3 "" H 2000 1650 50  0000 C CNN
+	1    2000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7805 U1
+U 1 1 57F52A83
+P 2500 1450
+F 0 "U1" H 2500 1725 50  0000 C CNN
+F 1 "7805" H 2500 1650 50  0000 C CNN
+F 2 "Custom Footprint:TO-220_Neutral123_Vertical" H 2500 1450 50  0001 C CNN
+F 3 "" H 2500 1450 50  0000 C CNN
+	1    2500 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1700 1450 1700
+Wire Wire Line
+	1450 1700 1450 1900
+Wire Wire Line
+	2500 1700 2500 2000
+Connection ~ 2500 1900
+Wire Wire Line
+	2000 1900 2000 1800
+Connection ~ 2000 1900
+Wire Wire Line
+	1650 1900 1650 1800
+Connection ~ 1650 1900
+Wire Wire Line
+	1350 1600 1450 1600
+Wire Wire Line
+	1450 1600 1450 1400
+Wire Wire Line
+	1450 1400 2100 1400
+Wire Wire Line
+	2000 1400 2000 1500
+Connection ~ 2000 1400
+Wire Wire Line
+	1650 1300 1650 1500
+Connection ~ 1650 1400
+$Comp
+L CP1 C3
+U 1 1 57F52BCA
+P 3000 1650
+F 0 "C3" H 3025 1750 50  0000 L CNN
+F 1 "100uF" H 3025 1550 50  0000 L CNN
+F 2 "Custom Footprint:Cap_Pol_Radial_D8_P2" H 3000 1650 50  0001 C CNN
+F 3 "" H 3000 1650 50  0000 C CNN
+	1    3000 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 57F52BF7
+P 3350 1650
+F 0 "C4" H 3375 1750 50  0000 L CNN
+F 1 "100nF" H 3375 1550 50  0000 L CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 3388 1500 50  0001 C CNN
+F 3 "" H 3350 1650 50  0000 C CNN
+	1    3350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 57F52C4F
+P 3350 1300
+F 0 "#PWR03" H 3350 1150 50  0001 C CNN
+F 1 "+5V" H 3350 1440 50  0000 C CNN
+F 2 "" H 3350 1300 50  0000 C CNN
+F 3 "" H 3350 1300 50  0000 C CNN
+	1    3350 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1300 3350 1500
+Connection ~ 3350 1400
+Wire Wire Line
+	3000 1400 3000 1500
+Connection ~ 3000 1400
+Wire Wire Line
+	3350 1900 3350 1800
+Wire Wire Line
+	3000 1900 3000 1800
+Connection ~ 3000 1900
+Text Notes 1925 900  0    100  ~ 0
+Power Supply
+Wire Notes Line
+	475  2350 11225 2350
+$Comp
+L LCD LCD1
+U 1 1 57F53C15
+P 9650 5050
+F 0 "LCD1" H 9550 6025 60  0000 C CNN
+F 1 "LCD 2004" H 9550 5950 60  0000 C CNN
+F 2 "" H 9650 5050 60  0001 C CNN
+F 3 "" H 9650 5050 60  0000 C CNN
+	1    9650 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LS164 U4
+U 1 1 57F53D06
+P 7850 5250
+F 0 "U4" H 7850 5825 60  0000 C CNN
+F 1 "74LS164" H 7850 5750 60  0000 C CNN
+F 2 "Custom Footprint:IC_PDIP_14pin" H 7850 5250 60  0001 C CNN
+F 3 "" H 7850 5250 60  0000 C CNN
+	1    7850 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4600 9050 4600
+Wire Wire Line
+	8350 5200 8500 5200
+Wire Wire Line
+	8500 5200 8500 4600
+Text GLabel 4300 1400 2    50   UnSpc ~ 0
++5V
+Text GLabel 4300 1900 2    50   UnSpc ~ 0
+GND
+Connection ~ 3350 1900
+Text GLabel 8950 4300 0    50   UnSpc ~ 0
+GND
+Text GLabel 8950 4500 0    50   UnSpc ~ 0
+GND
+Text GLabel 8950 4700 0    50   UnSpc ~ 0
+GND
+Text GLabel 8950 4400 0    50   UnSpc ~ 0
++5V
+Text GLabel 8950 4800 0    50   Input ~ 0
+LCD-EN
+$Comp
+L R R3
+U 1 1 57F57110
+P 8750 5700
+F 0 "R3" V 8675 5700 50  0000 C CNN
+F 1 "0Ω" V 8600 5700 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 8680 5700 50  0001 C CNN
+F 3 "" H 8750 5700 50  0000 C CNN
+	1    8750 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8350 5300 9050 5300
+Wire Wire Line
+	9050 5400 8350 5400
+Wire Wire Line
+	8350 5500 9050 5500
+Wire Wire Line
+	9050 5600 8350 5600
+$Comp
+L GND #PWR04
+U 1 1 57F576A5
+P 8950 5900
+F 0 "#PWR04" H 8950 5650 50  0001 C CNN
+F 1 "GND" H 8950 5750 50  0000 C CNN
+F 2 "" H 8950 5900 50  0000 C CNN
+F 3 "" H 8950 5900 50  0000 C CNN
+	1    8950 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 5900 8950 5800
+Wire Wire Line
+	8950 5800 9050 5800
+Wire Wire Line
+	8900 5700 9050 5700
+Text GLabel 8500 5700 0    50   UnSpc ~ 0
++5V
+Wire Wire Line
+	8500 5700 8600 5700
+$Comp
+L +5V #PWR05
+U 1 1 57F5792B
+P 7250 4700
+F 0 "#PWR05" H 7250 4550 50  0001 C CNN
+F 1 "+5V" H 7250 4840 50  0000 C CNN
+F 2 "" H 7250 4700 50  0000 C CNN
+F 3 "" H 7250 4700 50  0000 C CNN
+	1    7250 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4700 7250 5000
+Wire Wire Line
+	7250 5000 7350 5000
+Wire Wire Line
+	7350 4900 7250 4900
+Connection ~ 7250 4900
+Wire Wire Line
+	8950 4300 9050 4300
+Wire Wire Line
+	8950 4400 9050 4400
+Wire Wire Line
+	9050 4500 8950 4500
+Wire Wire Line
+	8950 4700 9050 4700
+Wire Wire Line
+	8950 4800 9050 4800
+$Comp
+L GND #PWR06
+U 1 1 57F5805D
+P 7250 5700
+F 0 "#PWR06" H 7250 5450 50  0001 C CNN
+F 1 "GND" H 7250 5550 50  0000 C CNN
+F 2 "" H 7250 5700 50  0000 C CNN
+F 3 "" H 7250 5700 50  0000 C CNN
+	1    7250 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 5700 7250 5600
+Wire Wire Line
+	7250 5600 7350 5600
+$Comp
+L PIC18F1320 U3
+U 1 1 57F5814C
+P 6000 4800
+F 0 "U3" H 6000 5425 60  0000 C CNN
+F 1 "PIC18F1320" H 6000 5350 60  0000 C CNN
+F 2 "" H 6000 4800 60  0001 C CNN
+F 3 "" H 6000 4800 60  0000 C CNN
+	1    6000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5200 7350 5200
+Wire Wire Line
+	7350 5300 7250 5300
+Wire Wire Line
+	7250 5300 7250 5200
+Connection ~ 7250 5200
+Wire Wire Line
+	5400 5200 5300 5200
+Wire Wire Line
+	5300 5200 5300 5400
+Wire Wire Line
+	5300 5400 7350 5400
+Wire Wire Line
+	6600 4800 7250 4800
+Connection ~ 7250 4800
+$Comp
+L GND #PWR07
+U 1 1 57F5844C
+P 5150 4900
+F 0 "#PWR07" H 5150 4650 50  0001 C CNN
+F 1 "GND" H 5150 4750 50  0000 C CNN
+F 2 "" H 5150 4900 50  0000 C CNN
+F 3 "" H 5150 4900 50  0000 C CNN
+	1    5150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 4900 5150 4800
+Wire Wire Line
+	5150 4800 5400 4800
+$Comp
+L Header_1X3 J1
+U 1 1 57F59298
+P 7950 1550
+F 0 "J1" H 7890 1830 60  0000 C CNN
+F 1 "ADC" H 7925 1750 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x03" H 7950 1550 60  0001 C CNN
+F 3 "" H 7950 1550 60  0000 C CNN
+	1    7950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Header_1X6 J2
+U 1 1 57F595E6
+P 9100 1600
+F 0 "J2" H 9025 2025 50  0000 C CNN
+F 1 "PICKIT" H 9100 1950 50  0000 C CNN
+F 2 "" H 9100 1600 50  0001 C CNN
+F 3 "" H 9100 1600 50  0000 C CNN
+	1    9100 1600
+	1    0    0    -1  
+$EndComp
+Text GLabel 9450 1350 2    50   BiDi ~ 0
+VPP
+Text GLabel 9450 1750 2    50   BiDi ~ 0
+PGC
+Text GLabel 9450 1650 2    50   BiDi ~ 0
+PGD
+Text GLabel 6700 5100 2    50   BiDi ~ 0
+LCD-EN
+Wire Wire Line
+	6700 5100 6600 5100
+Text GLabel 9450 1850 2    50   BiDi ~ 0
+LCD-EN
+Wire Wire Line
+	9450 1350 9200 1350
+Wire Wire Line
+	9200 1650 9450 1650
+Wire Wire Line
+	9450 1750 9200 1750
+Wire Wire Line
+	9200 1850 9450 1850
+$Comp
+L +5V #PWR08
+U 1 1 57F5A24D
+P 9800 1400
+F 0 "#PWR08" H 9800 1250 50  0001 C CNN
+F 1 "+5V" H 9800 1540 50  0000 C CNN
+F 2 "" H 9800 1400 50  0000 C CNN
+F 3 "" H 9800 1400 50  0000 C CNN
+	1    9800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 57F5A279
+P 9800 1600
+F 0 "#PWR09" H 9800 1350 50  0001 C CNN
+F 1 "GND" H 9800 1450 50  0000 C CNN
+F 2 "" H 9800 1600 50  0000 C CNN
+F 3 "" H 9800 1600 50  0000 C CNN
+	1    9800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1400 9800 1450
+Wire Wire Line
+	9800 1450 9200 1450
+Wire Wire Line
+	9200 1550 9800 1550
+Wire Wire Line
+	9800 1550 9800 1600
+$Comp
+L GND #PWR010
+U 1 1 57F5A74E
+P 8150 1750
+F 0 "#PWR010" H 8150 1500 50  0001 C CNN
+F 1 "GND" H 8150 1600 50  0000 C CNN
+F 2 "" H 8150 1750 50  0000 C CNN
+F 3 "" H 8150 1750 50  0000 C CNN
+	1    8150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1750 8150 1650
+Wire Wire Line
+	8150 1650 8050 1650
+Text GLabel 8300 1550 2    50   Output ~ 0
+Vset
+Text GLabel 8300 1450 2    50   Output ~ 0
+Psense
+Wire Wire Line
+	8300 1550 8050 1550
+Wire Wire Line
+	8050 1450 8300 1450
+Text Notes 8400 925  0    100  ~ 0
+I/O Pins
+Text GLabel 5300 4700 0    50   BiDi ~ 0
+VPP
+Wire Wire Line
+	5300 4700 5400 4700
+Text GLabel 6700 4900 2    50   BiDi ~ 0
+PGD
+Text GLabel 6700 5000 2    50   BiDi ~ 0
+PGC
+Wire Wire Line
+	6700 4900 6600 4900
+Wire Wire Line
+	6600 5000 6700 5000
+$Comp
+L LM324-RESCUE-Isaac_FYP U2
+U 1 1 57F53B09
+P 2650 3600
+F 0 "U2" H 2825 3500 60  0000 C CNN
+F 1 "LM324" H 2890 3410 60  0000 C CNN
+F 2 "Custom Footprint:IC_PDIP_14pin" H 2650 3600 60  0001 C CNN
+F 3 "" H 2650 3600 60  0000 C CNN
+	1    2650 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324-RESCUE-Isaac_FYP U2
+U 2 1 57F53B4C
+P 4150 5900
+F 0 "U2" H 4325 5800 60  0000 C CNN
+F 1 "LM324" H 4390 5710 60  0000 C CNN
+F 2 "Custom Footprint:IC_PDIP_14pin" H 4150 5900 60  0001 C CNN
+F 3 "" H 4150 5900 60  0000 C CNN
+	2    4150 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324-RESCUE-Isaac_FYP U2
+U 4 1 57F53BD1
+P 3750 4400
+F 0 "U2" H 3925 4300 60  0000 C CNN
+F 1 "LM324" H 3990 4210 60  0000 C CNN
+F 2 "Custom Footprint:IC_PDIP_14pin" H 3750 4400 60  0001 C CNN
+F 3 "" H 3750 4400 60  0000 C CNN
+	4    3750 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 3500 0    50   Input ~ 0
+Vset
+Wire Wire Line
+	2250 3500 2350 3500
+Text GLabel 3400 5450 0    50   Input ~ 0
+Psense
+Wire Wire Line
+	3450 4500 3350 4500
+Wire Wire Line
+	3350 4500 3350 4750
+Wire Wire Line
+	3350 4750 4550 4750
+$Comp
+L R R1
+U 1 1 57F54A7B
+P 4300 4400
+F 0 "R1" V 4380 4400 50  0000 C CNN
+F 1 "10KΩ" V 4225 4400 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 4230 4400 50  0001 C CNN
+F 3 "" H 4300 4400 50  0000 C CNN
+	1    4300 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 4400 4150 4400
+Wire Wire Line
+	4550 4400 4550 4850
+$Comp
+L LM324-RESCUE-Isaac_FYP U2
+U 3 1 57F54DBD
+P 5200 1650
+F 0 "U2" H 5375 1550 60  0000 C CNN
+F 1 "LM324" H 5440 1460 60  0000 C CNN
+F 2 "Custom Footprint:IC_PDIP_14pin" H 5200 1650 60  0001 C CNN
+F 3 "" H 5200 1650 60  0000 C CNN
+	3    5200 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +15V #PWR011
+U 1 1 57F54DF4
+P 5200 1150
+F 0 "#PWR011" H 5200 1000 50  0001 C CNN
+F 1 "+15V" H 5200 1290 50  0000 C CNN
+F 2 "" H 5200 1150 50  0000 C CNN
+F 3 "" H 5200 1150 50  0000 C CNN
+	1    5200 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 57F54E2A
+P 5200 2050
+F 0 "#PWR012" H 5200 1800 50  0001 C CNN
+F 1 "GND" H 5200 1900 50  0000 C CNN
+F 2 "" H 5200 2050 50  0000 C CNN
+F 3 "" H 5200 2050 50  0000 C CNN
+	1    5200 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2050 5200 1950
+Wire Wire Line
+	5200 1350 5200 1150
+$Comp
+L C C7
+U 1 1 57F54F2B
+P 5450 1250
+F 0 "C7" V 5325 1200 50  0000 L CNN
+F 1 "100nF" V 5575 1150 50  0000 L CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 5488 1100 50  0001 C CNN
+F 3 "" H 5450 1250 50  0000 C CNN
+	1    5450 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 57F54FCE
+P 5700 1350
+F 0 "#PWR013" H 5700 1100 50  0001 C CNN
+F 1 "GND" H 5700 1200 50  0000 C CNN
+F 2 "" H 5700 1350 50  0000 C CNN
+F 3 "" H 5700 1350 50  0000 C CNN
+	1    5700 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1250 5200 1250
+Connection ~ 5200 1250
+Wire Wire Line
+	5600 1250 5700 1250
+Wire Wire Line
+	5700 1250 5700 1350
+$Comp
+L POT POT1
+U 1 1 57F557E4
+P 3100 4300
+F 0 "POT1" V 3050 4125 50  0000 C CNN
+F 1 "10KΩ" V 3125 4125 50  0000 C CNN
+F 2 "Custom Footprint:Potentiometer_Bourns_3386" H 3100 4300 50  0001 C CNN
+F 3 "" H 3100 4300 50  0000 C CNN
+	1    3100 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 3700 2250 3700
+Wire Wire Line
+	2250 3700 2250 3950
+Wire Wire Line
+	2250 3950 3100 3950
+Wire Wire Line
+	3100 3600 3100 4050
+Wire Wire Line
+	3100 3600 2950 3600
+Connection ~ 3100 3950
+Wire Wire Line
+	3250 4300 3450 4300
+$Comp
+L GND #PWR014
+U 1 1 57F55C83
+P 3100 4550
+F 0 "#PWR014" H 3100 4300 50  0001 C CNN
+F 1 "GND" H 3100 4400 50  0000 C CNN
+F 2 "" H 3100 4550 50  0000 C CNN
+F 3 "" H 3100 4550 50  0000 C CNN
+	1    3100 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 4400
+$Comp
+L POT POT2
+U 1 1 57F567A0
+P 3500 5800
+F 0 "POT2" V 3450 5625 50  0000 C CNN
+F 1 "10KΩ" V 3525 5625 50  0000 C CNN
+F 2 "Custom Footprint:Potentiometer_Bourns_3386" H 3500 5800 50  0001 C CNN
+F 3 "" H 3500 5800 50  0000 C CNN
+	1    3500 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 5450 3500 5450
+Wire Wire Line
+	3500 5450 3500 5550
+$Comp
+L GND #PWR015
+U 1 1 57F56AEE
+P 3500 6050
+F 0 "#PWR015" H 3500 5800 50  0001 C CNN
+F 1 "GND" H 3500 5900 50  0000 C CNN
+F 2 "" H 3500 6050 50  0000 C CNN
+F 3 "" H 3500 6050 50  0000 C CNN
+	1    3500 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5800 3850 5800
+Wire Wire Line
+	3850 6000 3750 6000
+Wire Wire Line
+	3750 6000 3750 6250
+Wire Wire Line
+	3750 6250 4950 6250
+$Comp
+L R R2
+U 1 1 57F5735D
+P 4700 5900
+F 0 "R2" V 4780 5900 50  0000 C CNN
+F 1 "10KΩ" V 4625 5900 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 4630 5900 50  0001 C CNN
+F 3 "" H 4700 5900 50  0000 C CNN
+	1    4700 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 5900 4950 5900
+Wire Wire Line
+	4550 5900 4450 5900
+$Comp
+L ZENER D1
+U 1 1 57F575F0
+P 4550 5050
+F 0 "D1" V 4525 5175 50  0000 C CNN
+F 1 "1N750" V 4600 5250 50  0000 C CNN
+F 2 "Custom Footprint:1N4148" H 4550 5050 50  0001 C CNN
+F 3 "" H 4550 5050 50  0000 C CNN
+	1    4550 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 57F5777A
+P 4550 5250
+F 0 "#PWR016" H 4550 5000 50  0001 C CNN
+F 1 "GND" H 4550 5100 50  0000 C CNN
+F 2 "" H 4550 5250 50  0000 C CNN
+F 3 "" H 4550 5250 50  0000 C CNN
+	1    4550 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L ZENER D2
+U 1 1 57F577CE
+P 4950 6550
+F 0 "D2" V 4925 6675 50  0000 C CNN
+F 1 "1N750" V 5000 6750 50  0000 C CNN
+F 2 "Custom Footprint:1N4148" H 4950 6550 50  0001 C CNN
+F 3 "" H 4950 6550 50  0000 C CNN
+	1    4950 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR017
+U 1 1 57F57902
+P 4950 6750
+F 0 "#PWR017" H 4950 6500 50  0001 C CNN
+F 1 "GND" H 4950 6600 50  0000 C CNN
+F 2 "" H 4950 6750 50  0000 C CNN
+F 3 "" H 4950 6750 50  0000 C CNN
+	1    4950 6750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 6250
+Connection ~ 4550 4750
+Connection ~ 4950 5900
+Wire Wire Line
+	4950 4500 4950 6350
+$Comp
+L C C5
+U 1 1 57F5A784
+P 3700 1650
+F 0 "C5" H 3725 1750 50  0000 L CNN
+F 1 "100nF" H 3725 1550 50  0000 L CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 3738 1500 50  0001 C CNN
+F 3 "" H 3700 1650 50  0000 C CNN
+	1    3700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 57F5A7E2
+P 4050 1650
+F 0 "C6" H 4075 1750 50  0000 L CNN
+F 1 "100nF" H 4075 1550 50  0000 L CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 4088 1500 50  0001 C CNN
+F 3 "" H 4050 1650 50  0000 C CNN
+	1    4050 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1400 4300 1400
+Wire Wire Line
+	1450 1900 4300 1900
+Wire Wire Line
+	4050 1800 4050 1900
+Connection ~ 4050 1900
+Wire Wire Line
+	3700 1800 3700 1900
+Connection ~ 3700 1900
+Wire Wire Line
+	3700 1500 3700 1400
+Connection ~ 3700 1400
+Wire Wire Line
+	4050 1500 4050 1400
+Connection ~ 4050 1400
+Wire Notes Line
+	6300 475  6300 2350
+Text Notes 5675 2900 0    100  ~ 0
+Main Circuit
+Wire Wire Line
+	4450 4400 5400 4400
+Wire Wire Line
+	5400 4500 4950 4500
+$EndSCHEMATC

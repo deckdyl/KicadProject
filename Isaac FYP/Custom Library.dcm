@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74LS164
+D 14 Pin
+$ENDCMP
+#
+$CMP PIC18F1320
+D 18 Pin
+$ENDCMP
+#
+#End Doc Library

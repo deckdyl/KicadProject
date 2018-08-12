@@ -1,0 +1,5 @@
+Revision 1
+	- Original Schematic documented according to Isaac Prototype Circuit
+
+Revision 2
+	- MCU input protection circuit replaced with zener diode

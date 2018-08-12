@@ -1,0 +1,588 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Custom Library
+LIBS:FYP Solar Tracker-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "FYP Solar Tracker"
+Date "2016-11-21"
+Rev "1"
+Comp "Singapore Polytechnic"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L L297 U1
+U 1 1 58328E61
+P 4000 3900
+F 0 "U1" H 4000 4600 60  0000 C CNN
+F 1 "L297" H 4000 4500 60  0000 C CNN
+F 2 "Custom Footprint:IC_PDIP_20pin" H 4000 3900 60  0001 C CNN
+F 3 "" H 4000 3900 60  0000 C CNN
+	1    4000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L L298 U2
+U 1 1 58328FA6
+P 5800 3800
+F 0 "U2" H 5800 4400 60  0000 C CNN
+F 1 "L298" H 5800 4300 60  0000 C CNN
+F 2 "Custom Footprint:L298" H 5800 3800 60  0001 C CNN
+F 3 "" H 5800 3800 60  0000 C CNN
+	1    5800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3650 5100 3650
+Wire Wire Line
+	5100 3750 4600 3750
+Wire Wire Line
+	4600 3850 5100 3850
+Wire Wire Line
+	5100 3950 4600 3950
+Wire Wire Line
+	4600 4050 5100 4050
+Wire Wire Line
+	5100 4150 4600 4150
+Wire Wire Line
+	4600 3450 5100 3450
+$Comp
+L +5V #PWR01
+U 1 1 58329438
+P 4850 3350
+F 0 "#PWR01" H 4850 3200 50  0001 C CNN
+F 1 "+5V" H 4850 3490 50  0000 C CNN
+F 2 "" H 4850 3350 50  0000 C CNN
+F 3 "" H 4850 3350 50  0000 C CNN
+	1    4850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3350 4850 3450
+Connection ~ 4850 3450
+$Comp
+L GND #PWR02
+U 1 1 583294D4
+P 5000 4750
+F 0 "#PWR02" H 5000 4500 50  0001 C CNN
+F 1 "GND" H 5000 4600 50  0000 C CNN
+F 2 "" H 5000 4750 50  0000 C CNN
+F 3 "" H 5000 4750 50  0000 C CNN
+	1    5000 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4350 5000 4750
+Wire Wire Line
+	5000 4350 5100 4350
+Wire Wire Line
+	5000 4650 4600 4650
+Connection ~ 5000 4650
+$Comp
+L Header_1X4 J3
+U 1 1 58329082
+P 9400 3850
+F 0 "J3" H 9400 4225 60  0000 C CNN
+F 1 "Motor" H 9475 4150 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x04" H 9400 3850 60  0001 C CNN
+F 3 "" H 9400 3850 60  0000 C CNN
+	1    9400 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3650 9250 3650
+Wire Wire Line
+	6500 3750 9250 3750
+Wire Wire Line
+	6500 3850 9250 3850
+Wire Wire Line
+	6500 3950 9250 3950
+Text GLabel 4600 4350 2    50   Input ~ 0
+Sense1
+Text GLabel 4600 4450 2    50   Input ~ 0
+Sense2
+Text GLabel 6850 4250 2    50   Input ~ 0
+Sense1
+Text GLabel 6850 4350 2    50   Input ~ 0
+Sense2
+$Comp
+L R R4
+U 1 1 58329ACF
+P 6550 4600
+F 0 "R4" H 6650 4625 50  0000 C CNN
+F 1 "1Ω" H 6650 4550 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-2W" V 6480 4600 50  0001 C CNN
+F 3 "" H 6550 4600 50  0000 C CNN
+	1    6550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 58329C18
+P 6800 4600
+F 0 "R5" H 6900 4625 50  0000 C CNN
+F 1 "1Ω" H 6900 4550 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-2W" V 6730 4600 50  0001 C CNN
+F 3 "" H 6800 4600 50  0000 C CNN
+	1    6800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4450 6800 4350
+Connection ~ 6800 4350
+Wire Wire Line
+	6550 4250 6550 4450
+Connection ~ 6550 4250
+$Comp
+L GND #PWR03
+U 1 1 58329D22
+P 6675 4950
+F 0 "#PWR03" H 6675 4700 50  0001 C CNN
+F 1 "GND" H 6675 4800 50  0000 C CNN
+F 2 "" H 6675 4950 50  0000 C CNN
+F 3 "" H 6675 4950 50  0000 C CNN
+	1    6675 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4850 6800 4750
+Wire Wire Line
+	6550 4750 6550 4850
+$Comp
+L +5V #PWR04
+U 1 1 5832A265
+P 3300 3350
+F 0 "#PWR04" H 3300 3200 50  0001 C CNN
+F 1 "+5V" H 3300 3490 50  0000 C CNN
+F 2 "" H 3300 3350 50  0000 C CNN
+F 3 "" H 3300 3350 50  0000 C CNN
+	1    3300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3350 3300 4550
+Wire Wire Line
+	2400 3550 3400 3550
+Wire Wire Line
+	3300 3850 3400 3850
+Connection ~ 3300 3550
+Wire Wire Line
+	3300 4550 3400 4550
+Connection ~ 3300 3850
+Wire Wire Line
+	3400 4450 3300 4450
+Connection ~ 3300 4450
+Text GLabel 3150 4050 0    50   Input ~ 0
+MotorClk
+Text GLabel 3150 3950 0    50   Input ~ 0
+MotorDir
+Wire Wire Line
+	3150 3950 3400 3950
+Wire Wire Line
+	3400 4050 3150 4050
+Text GLabel 3150 4350 0    50   Input ~ 0
+0.5Vref
+Wire Wire Line
+	3150 4350 3400 4350
+Wire Wire Line
+	6675 4950 6675 4850
+Wire Wire Line
+	6550 4850 6800 4850
+Connection ~ 6675 4850
+Wire Wire Line
+	6500 4250 6850 4250
+Wire Wire Line
+	6500 4350 6850 4350
+$Comp
+L D D5
+U 1 1 5832BFC7
+P 7300 4250
+F 0 "D5" V 7275 4350 50  0000 C CNN
+F 1 "1N5818" V 7350 4450 50  0000 C CNN
+F 2 "Custom Footprint:1N4148" H 7300 4250 50  0001 C CNN
+F 3 "" H 7300 4250 50  0000 C CNN
+	1    7300 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L D D6
+U 1 1 5832C11E
+P 7750 4250
+F 0 "D6" V 7725 4350 50  0000 C CNN
+F 1 "1N5818" V 7800 4450 50  0000 C CNN
+F 2 "Custom Footprint:1N4148" H 7750 4250 50  0001 C CNN
+F 3 "" H 7750 4250 50  0000 C CNN
+	1    7750 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L D D7
+U 1 1 5832C189
+P 8200 4250
+F 0 "D7" V 8175 4350 50  0000 C CNN
+F 1 "1N5818" V 8250 4450 50  0000 C CNN
+F 2 "Custom Footprint:1N4148" H 8200 4250 50  0001 C CNN
+F 3 "" H 8200 4250 50  0000 C CNN
+	1    8200 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L D D8
+U 1 1 5832C1E3
+P 8650 4250
+F 0 "D8" V 8625 4350 50  0000 C CNN
+F 1 "1N5818" V 8700 4450 50  0000 C CNN
+F 2 "Custom Footprint:1N4148" H 8650 4250 50  0001 C CNN
+F 3 "" H 8650 4250 50  0000 C CNN
+	1    8650 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L D D1
+U 1 1 5832C49E
+P 7300 3350
+F 0 "D1" V 7275 3450 50  0000 C CNN
+F 1 "1N5818" V 7350 3550 50  0000 C CNN
+F 2 "Custom Footprint:1N4148" H 7300 3350 50  0001 C CNN
+F 3 "" H 7300 3350 50  0000 C CNN
+	1    7300 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L D D2
+U 1 1 5832C4F8
+P 7750 3350
+F 0 "D2" V 7725 3450 50  0000 C CNN
+F 1 "1N5818" V 7800 3550 50  0000 C CNN
+F 2 "Custom Footprint:1N4148" H 7750 3350 50  0001 C CNN
+F 3 "" H 7750 3350 50  0000 C CNN
+	1    7750 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L D D3
+U 1 1 5832C553
+P 8200 3350
+F 0 "D3" V 8175 3450 50  0000 C CNN
+F 1 "1N5818" V 8250 3550 50  0000 C CNN
+F 2 "Custom Footprint:1N4148" H 8200 3350 50  0001 C CNN
+F 3 "" H 8200 3350 50  0000 C CNN
+	1    8200 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L D D4
+U 1 1 5832C5A9
+P 8650 3350
+F 0 "D4" V 8625 3450 50  0000 C CNN
+F 1 "1N5818" V 8700 3550 50  0000 C CNN
+F 2 "Custom Footprint:1N4148" H 8650 3350 50  0001 C CNN
+F 3 "" H 8650 3350 50  0000 C CNN
+	1    8650 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 3500 7300 4100
+Connection ~ 7300 3650
+Wire Wire Line
+	7750 3500 7750 4100
+Connection ~ 7750 3750
+Wire Wire Line
+	8200 3500 8200 4100
+Connection ~ 8200 3850
+Wire Wire Line
+	8650 3500 8650 4100
+Connection ~ 8650 3950
+$Comp
+L GND #PWR05
+U 1 1 5832CAD2
+P 7975 4600
+F 0 "#PWR05" H 7975 4350 50  0001 C CNN
+F 1 "GND" H 7975 4450 50  0000 C CNN
+F 2 "" H 7975 4600 50  0000 C CNN
+F 3 "" H 7975 4600 50  0000 C CNN
+	1    7975 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7975 4500 7975 4600
+Wire Wire Line
+	7300 4500 8650 4500
+Wire Wire Line
+	8650 4500 8650 4400
+Wire Wire Line
+	7300 4400 7300 4500
+Connection ~ 7975 4500
+Wire Wire Line
+	7750 4400 7750 4500
+Connection ~ 7750 4500
+Wire Wire Line
+	8200 4400 8200 4500
+Connection ~ 8200 4500
+Wire Wire Line
+	8650 3100 8650 3200
+Wire Wire Line
+	6600 3100 8650 3100
+Wire Wire Line
+	6600 3000 6600 3450
+Wire Wire Line
+	6600 3450 6500 3450
+Wire Wire Line
+	7300 3200 7300 3100
+Connection ~ 7300 3100
+Wire Wire Line
+	7750 3200 7750 3100
+Connection ~ 7750 3100
+Wire Wire Line
+	8200 3200 8200 3100
+Connection ~ 8200 3100
+Connection ~ 6600 3100
+$Comp
+L +Vs #PWR06
+U 1 1 5832D347
+P 6600 2950
+F 0 "#PWR06" H 6600 3100 50  0001 C CNN
+F 1 "+Vs" H 6590 3040 50  0000 C CNN
+F 2 "" H 6600 2950 50  0000 C CNN
+F 3 "" H 6600 2950 50  0000 C CNN
+	1    6600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5832D60B
+P 2400 4000
+F 0 "R3" H 2500 4025 50  0000 C CNN
+F 1 "10kΩ" H 2550 3950 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 2330 4000 50  0001 C CNN
+F 3 "" H 2400 4000 50  0000 C CNN
+	1    2400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5832D76B
+P 2400 4500
+F 0 "C1" H 2425 4600 50  0000 L CNN
+F 1 "10nF" H 2425 4400 50  0000 L CNN
+F 2 "Custom Footprint:Cap_UnPol_P3" H 2438 4350 50  0001 C CNN
+F 3 "" H 2400 4500 50  0000 C CNN
+	1    2400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4150 2400 4350
+Wire Wire Line
+	2400 4250 3400 4250
+Connection ~ 2400 4250
+Wire Wire Line
+	2400 3850 2400 3550
+$Comp
+L GND #PWR07
+U 1 1 5832D9EF
+P 2400 4650
+F 0 "#PWR07" H 2400 4400 50  0001 C CNN
+F 1 "GND" H 2400 4500 50  0000 C CNN
+F 2 "" H 2400 4650 50  0000 C CNN
+F 3 "" H 2400 4650 50  0000 C CNN
+	1    2400 4650
+	1    0    0    -1  
+$EndComp
+Text Notes 4900 2575 0    80   ~ 0
+Stepper Motor Controller and Driver
+$Comp
+L Header_1X3 J1
+U 1 1 5832D2C2
+P 1550 1600
+F 0 "J1" H 1490 1880 60  0000 C CNN
+F 1 "POWER" H 1600 1800 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x03" H 1550 1600 60  0001 C CNN
+F 3 "" H 1550 1600 60  0000 C CNN
+	1    1550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Header_1X2 J2
+U 1 1 5832D2F7
+P 1550 2250
+F 0 "J2" H 1490 2480 60  0000 C CNN
+F 1 "I/O" H 1525 2400 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 1550 2250 60  0001 C CNN
+F 3 "" H 1550 2250 60  0000 C CNN
+	1    1550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +Vs #PWR08
+U 1 1 5832D5D5
+P 2150 1350
+F 0 "#PWR08" H 2150 1500 50  0001 C CNN
+F 1 "+Vs" H 2140 1440 50  0000 C CNN
+F 2 "" H 2150 1350 50  0000 C CNN
+F 3 "" H 2150 1350 50  0000 C CNN
+	1    2150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 5832D6B2
+P 2400 1500
+F 0 "#PWR09" H 2400 1350 50  0001 C CNN
+F 1 "+5V" H 2400 1640 50  0000 C CNN
+F 2 "" H 2400 1500 50  0000 C CNN
+F 3 "" H 2400 1500 50  0000 C CNN
+	1    2400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1500 2400 1600
+Wire Wire Line
+	2400 1600 1650 1600
+Wire Wire Line
+	1650 1500 2150 1500
+Wire Wire Line
+	2150 1500 2150 1400
+$Comp
+L GND #PWR010
+U 1 1 5832D7B7
+P 1750 1800
+F 0 "#PWR010" H 1750 1550 50  0001 C CNN
+F 1 "GND" H 1750 1650 50  0000 C CNN
+F 2 "" H 1750 1800 50  0000 C CNN
+F 3 "" H 1750 1800 50  0000 C CNN
+	1    1750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1800 1750 1700
+Wire Wire Line
+	1750 1700 1650 1700
+Text GLabel 1650 2200 2    50   Output ~ 0
+MotorDir
+Text GLabel 1650 2300 2    50   Output ~ 0
+MotorClk
+$Comp
+L TL431 Vref1
+U 1 1 5832E329
+P 3350 1850
+F 0 "Vref1" H 3325 2425 60  0000 C CNN
+F 1 "TL431" H 3325 2350 60  0000 C CNN
+F 2 "Custom Footprint:TO-92_Inline_Wide" H 3350 1850 60  0001 C CNN
+F 3 "" H 3350 1850 60  0000 C CNN
+	1    3350 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 5832E522
+P 4000 1200
+F 0 "R1" H 4100 1225 50  0000 C CNN
+F 1 "1.2kΩ" H 4150 1150 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 3930 1200 50  0001 C CNN
+F 3 "" H 4000 1200 50  0000 C CNN
+	1    4000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR011
+U 1 1 5832E6C3
+P 4000 1050
+F 0 "#PWR011" H 4000 900 50  0001 C CNN
+F 1 "+5V" H 4000 1190 50  0000 C CNN
+F 2 "" H 4000 1050 50  0000 C CNN
+F 3 "" H 4000 1050 50  0000 C CNN
+	1    4000 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1350 4000 1850
+Wire Wire Line
+	3800 1850 4100 1850
+Wire Wire Line
+	3800 1450 4000 1450
+Connection ~ 4000 1450
+$Comp
+L GND #PWR012
+U 1 1 5832E7CE
+P 3900 2350
+F 0 "#PWR012" H 3900 2100 50  0001 C CNN
+F 1 "GND" H 3900 2200 50  0000 C CNN
+F 2 "" H 3900 2350 50  0000 C CNN
+F 3 "" H 3900 2350 50  0000 C CNN
+	1    3900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2350 3900 2250
+Wire Wire Line
+	3800 2250 4000 2250
+$Comp
+L R R2
+U 1 1 5832E88C
+P 4250 1850
+F 0 "R2" V 4400 1850 50  0000 C CNN
+F 1 "1.5kΩ" V 4325 1850 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 4180 1850 50  0001 C CNN
+F 3 "" H 4250 1850 50  0000 C CNN
+	1    4250 1850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4000 1850
+$Comp
+L POT POT1
+U 1 1 5832ED68
+P 4250 2250
+F 0 "POT1" H 4250 2075 50  0000 C CNN
+F 1 "1kΩ" H 4250 2150 50  0000 C CNN
+F 2 "Custom Footprint:Potentiometer_Bourns_3386" H 4250 2250 50  0001 C CNN
+F 3 "" H 4250 2250 50  0000 C CNN
+	1    4250 2250
+	-1   0    0    1   
+$EndComp
+Connection ~ 3900 2250
+Wire Wire Line
+	4500 2250 4600 2250
+Wire Wire Line
+	4600 2250 4600 1850
+Wire Wire Line
+	4600 1850 4400 1850
+Text GLabel 4350 2500 2    50   Output ~ 0
+0.5Vref
+Wire Wire Line
+	4250 2400 4250 2500
+Wire Wire Line
+	4250 2500 4350 2500
+$EndSCHEMATC

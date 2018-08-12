@@ -1,0 +1,1239 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Custom Library
+LIBS:EyeCare-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Eye Care because I care"
+Date ""
+Rev "1"
+Comp "Singapore Polytechnic"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4511 U2
+U 1 1 58807DC4
+P 4900 2550
+F 0 "U2" H 4900 3200 60  0000 C CNN
+F 1 "4511" H 4900 3100 60  0000 C CNN
+F 2 "Custom Footprint:IC_PDIP_16pin" H 4900 2550 60  0001 C CNN
+F 3 "" H 4900 2550 60  0000 C CNN
+	1    4900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 58807E42
+P 5550 2250
+F 0 "R5" V 5525 2400 50  0000 C CNN
+F 1 "180Ω" V 5550 2250 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 5480 2250 50  0001 C CNN
+F 3 "" H 5550 2250 50  0000 C CNN
+	1    5550 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 58807ED1
+P 5550 2350
+F 0 "R6" V 5525 2500 50  0000 C CNN
+F 1 "180Ω" V 5550 2350 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 5480 2350 50  0001 C CNN
+F 3 "" H 5550 2350 50  0000 C CNN
+	1    5550 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R7
+U 1 1 58807EEE
+P 5550 2450
+F 0 "R7" V 5525 2600 50  0000 C CNN
+F 1 "180Ω" V 5550 2450 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 5480 2450 50  0001 C CNN
+F 3 "" H 5550 2450 50  0000 C CNN
+	1    5550 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R8
+U 1 1 58807F0E
+P 5550 2550
+F 0 "R8" V 5525 2700 50  0000 C CNN
+F 1 "180Ω" V 5550 2550 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 5480 2550 50  0001 C CNN
+F 3 "" H 5550 2550 50  0000 C CNN
+	1    5550 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R9
+U 1 1 58807F31
+P 5550 2650
+F 0 "R9" V 5525 2800 50  0000 C CNN
+F 1 "180Ω" V 5550 2650 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 5480 2650 50  0001 C CNN
+F 3 "" H 5550 2650 50  0000 C CNN
+	1    5550 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L R R10
+U 1 1 58807F57
+P 5550 2750
+F 0 "R10" V 5525 2925 50  0000 C CNN
+F 1 "180Ω" V 5550 2750 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 5480 2750 50  0001 C CNN
+F 3 "" H 5550 2750 50  0000 C CNN
+	1    5550 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L R R11
+U 1 1 58807F80
+P 5550 2850
+F 0 "R11" V 5525 3025 50  0000 C CNN
+F 1 "180Ω" V 5550 2850 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 5480 2850 50  0001 C CNN
+F 3 "" H 5550 2850 50  0000 C CNN
+	1    5550 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 58807FBE
+P 4300 3050
+F 0 "#PWR01" H 4300 2800 50  0001 C CNN
+F 1 "GND" H 4300 2900 50  0000 C CNN
+F 2 "" H 4300 3050 50  0000 C CNN
+F 3 "" H 4300 3050 50  0000 C CNN
+	1    4300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 58807FF9
+P 4300 2050
+F 0 "#PWR02" H 4300 1900 50  0001 C CNN
+F 1 "+5V" H 4300 2190 50  0000 C CNN
+F 2 "" H 4300 2050 50  0000 C CNN
+F 3 "" H 4300 2050 50  0000 C CNN
+	1    4300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LS164 U1
+U 1 1 5880804F
+P 3150 2400
+F 0 "U1" H 3150 2975 60  0000 C CNN
+F 1 "74LS164" H 3150 2900 60  0000 C CNN
+F 2 "Custom Footprint:IC_PDIP_14pin" H 3150 2400 60  0001 C CNN
+F 3 "" H 3150 2400 60  0000 C CNN
+	1    3150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 58808177
+P 2550 2850
+F 0 "#PWR03" H 2550 2600 50  0001 C CNN
+F 1 "GND" H 2550 2700 50  0000 C CNN
+F 2 "" H 2550 2850 50  0000 C CNN
+F 3 "" H 2550 2850 50  0000 C CNN
+	1    2550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR04
+U 1 1 588081C0
+P 2550 1950
+F 0 "#PWR04" H 2550 1800 50  0001 C CNN
+F 1 "+5V" H 2550 2090 50  0000 C CNN
+F 2 "" H 2550 1950 50  0000 C CNN
+F 3 "" H 2550 1950 50  0000 C CNN
+	1    2550 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7Segment_CC SEG4
+U 1 1 588088D9
+P 10000 1750
+F 0 "SEG4" H 10000 2900 60  0000 C CNN
+F 1 "7Segment_CC" H 10000 2800 60  0000 C CNN
+F 2 "Custom Footprint:7Seg_small" H 10000 1750 60  0001 C CNN
+F 3 "" H 10000 1750 60  0000 C CNN
+	1    10000 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7Segment_CC SEG3
+U 1 1 58808B0C
+P 8750 1750
+F 0 "SEG3" H 8750 2900 60  0000 C CNN
+F 1 "7Segment_CC" H 8750 2800 60  0000 C CNN
+F 2 "Custom Footprint:7Seg_small" H 8750 1750 60  0001 C CNN
+F 3 "" H 8750 1750 60  0000 C CNN
+	1    8750 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7Segment_CC SEG2
+U 1 1 58808B43
+P 7500 1750
+F 0 "SEG2" H 7500 2900 60  0000 C CNN
+F 1 "7Segment_CC" H 7500 2800 60  0000 C CNN
+F 2 "Custom Footprint:7Seg_small" H 7500 1750 60  0001 C CNN
+F 3 "" H 7500 1750 60  0000 C CNN
+	1    7500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7Segment_CC SEG1
+U 1 1 58808B7D
+P 6250 1750
+F 0 "SEG1" H 6250 2900 60  0000 C CNN
+F 1 "7Segment_CC" H 6250 2800 60  0000 C CNN
+F 2 "Custom Footprint:7Seg_small" H 6250 1750 60  0001 C CNN
+F 3 "" H 6250 1750 60  0000 C CNN
+	1    6250 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2850 4300 3050
+Wire Wire Line
+	4300 2950 4400 2950
+Wire Wire Line
+	4400 2850 4300 2850
+Connection ~ 4300 2950
+Wire Wire Line
+	4300 2050 4300 2350
+Wire Wire Line
+	4300 2150 4400 2150
+Wire Wire Line
+	4300 2250 4400 2250
+Connection ~ 4300 2150
+Wire Wire Line
+	4300 2350 4400 2350
+Connection ~ 4300 2250
+Wire Wire Line
+	2550 2850 2550 2750
+Wire Wire Line
+	2550 2750 2650 2750
+Wire Wire Line
+	2550 1950 2550 2150
+Wire Wire Line
+	2550 2050 2650 2050
+Wire Wire Line
+	2550 2150 2650 2150
+Connection ~ 2550 2050
+Wire Wire Line
+	5700 2850 10300 2850
+Wire Wire Line
+	10300 2850 10300 1950
+Wire Wire Line
+	10200 2750 10200 1950
+Wire Wire Line
+	5700 2750 10200 2750
+Wire Wire Line
+	5700 2650 10100 2650
+Wire Wire Line
+	10100 2650 10100 1950
+Wire Wire Line
+	10000 2550 10000 1950
+Wire Wire Line
+	5700 2550 10000 2550
+Wire Wire Line
+	5700 2450 9900 2450
+Wire Wire Line
+	9900 2450 9900 1950
+Wire Wire Line
+	9800 2350 9800 1950
+Wire Wire Line
+	5700 2350 9800 2350
+Wire Wire Line
+	5700 2250 9700 2250
+Wire Wire Line
+	9700 2250 9700 1950
+Wire Wire Line
+	9050 1950 9050 2850
+Connection ~ 9050 2850
+Wire Wire Line
+	8950 2750 8950 1950
+Connection ~ 8950 2750
+Wire Wire Line
+	8850 1950 8850 2650
+Connection ~ 8850 2650
+Wire Wire Line
+	8750 1950 8750 2550
+Connection ~ 8750 2550
+Wire Wire Line
+	8650 2450 8650 1950
+Connection ~ 8650 2450
+Wire Wire Line
+	8550 2350 8550 1950
+Connection ~ 8550 2350
+Wire Wire Line
+	8450 1950 8450 2250
+Connection ~ 8450 2250
+Wire Wire Line
+	7200 2250 7200 1950
+Connection ~ 7200 2250
+Wire Wire Line
+	5950 1950 5950 2250
+Connection ~ 5950 2250
+Wire Wire Line
+	6050 1950 6050 2350
+Connection ~ 6050 2350
+Wire Wire Line
+	6150 2450 6150 1950
+Connection ~ 6150 2450
+Wire Wire Line
+	6250 1950 6250 2550
+Connection ~ 6250 2550
+Wire Wire Line
+	6350 2650 6350 1950
+Connection ~ 6350 2650
+Wire Wire Line
+	6450 1950 6450 2750
+Connection ~ 6450 2750
+Wire Wire Line
+	6550 2850 6550 1950
+Connection ~ 6550 2850
+Wire Wire Line
+	7300 1950 7300 2350
+Connection ~ 7300 2350
+Wire Wire Line
+	7400 2450 7400 1950
+Connection ~ 7400 2450
+Wire Wire Line
+	7500 1950 7500 2550
+Connection ~ 7500 2550
+Wire Wire Line
+	7600 2650 7600 1950
+Connection ~ 7600 2650
+Wire Wire Line
+	7700 1950 7700 2750
+Connection ~ 7700 2750
+Wire Wire Line
+	7800 2850 7800 1950
+Connection ~ 7800 2850
+$Comp
+L Q_NPN_CBE Q1
+U 1 1 588095D1
+P 6850 3300
+F 0 "Q1" H 7125 3350 50  0000 R CNN
+F 1 "2N3904" H 7325 3250 50  0000 R CNN
+F 2 "Custom Footprint:TO-92_Inline_Wide" H 7050 3400 50  0001 C CNN
+F 3 "" H 6850 3300 50  0000 C CNN
+	1    6850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_CBE Q2
+U 1 1 5880A357
+P 8100 3300
+F 0 "Q2" H 8375 3350 50  0000 R CNN
+F 1 "2N3904" H 8575 3250 50  0000 R CNN
+F 2 "Custom Footprint:TO-92_Inline_Wide" H 8300 3400 50  0001 C CNN
+F 3 "" H 8100 3300 50  0000 C CNN
+	1    8100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_CBE Q3
+U 1 1 5880A39A
+P 9350 3300
+F 0 "Q3" H 9625 3350 50  0000 R CNN
+F 1 "2N3904" H 9825 3250 50  0000 R CNN
+F 2 "Custom Footprint:TO-92_Inline_Wide" H 9550 3400 50  0001 C CNN
+F 3 "" H 9350 3300 50  0000 C CNN
+	1    9350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_CBE Q4
+U 1 1 5880A3E0
+P 10600 3300
+F 0 "Q4" H 10875 3350 50  0000 R CNN
+F 1 "2N3904" H 11075 3250 50  0000 R CNN
+F 2 "Custom Footprint:TO-92_Inline_Wide" H 10800 3400 50  0001 C CNN
+F 3 "" H 10600 3300 50  0000 C CNN
+	1    10600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3100 10700 850 
+Wire Wire Line
+	10700 850  10600 850 
+Wire Wire Line
+	9350 850  9450 850 
+Wire Wire Line
+	9450 850  9450 3100
+Wire Wire Line
+	8100 850  8200 850 
+Wire Wire Line
+	8200 850  8200 3100
+Wire Wire Line
+	6850 850  6950 850 
+Wire Wire Line
+	6950 850  6950 3100
+$Comp
+L GND #PWR05
+U 1 1 5880A5A2
+P 6950 3500
+F 0 "#PWR05" H 6950 3250 50  0001 C CNN
+F 1 "GND" H 6950 3350 50  0000 C CNN
+F 2 "" H 6950 3500 50  0000 C CNN
+F 3 "" H 6950 3500 50  0000 C CNN
+	1    6950 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 5880A7D4
+P 8200 3500
+F 0 "#PWR06" H 8200 3250 50  0001 C CNN
+F 1 "GND" H 8200 3350 50  0000 C CNN
+F 2 "" H 8200 3500 50  0000 C CNN
+F 3 "" H 8200 3500 50  0000 C CNN
+	1    8200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 5880A812
+P 9450 3500
+F 0 "#PWR07" H 9450 3250 50  0001 C CNN
+F 1 "GND" H 9450 3350 50  0000 C CNN
+F 2 "" H 9450 3500 50  0000 C CNN
+F 3 "" H 9450 3500 50  0000 C CNN
+	1    9450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5880A872
+P 10700 3500
+F 0 "#PWR08" H 10700 3250 50  0001 C CNN
+F 1 "GND" H 10700 3350 50  0000 C CNN
+F 2 "" H 10700 3500 50  0000 C CNN
+F 3 "" H 10700 3500 50  0000 C CNN
+	1    10700 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 10400 3300 0    50   Input ~ 0
+D0
+Text GLabel 9150 3300 0    50   Input ~ 0
+D1
+Text GLabel 7900 3300 0    50   Input ~ 0
+D2
+Text GLabel 6650 3300 0    50   Input ~ 0
+D3
+$Comp
+L R R1
+U 1 1 5880B18B
+P 3800 2050
+F 0 "R1" V 3825 1900 50  0000 C CNN
+F 1 "470Ω" V 3800 2050 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 3730 2050 50  0001 C CNN
+F 3 "" H 3800 2050 50  0000 C CNN
+	1    3800 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5880B453
+P 3800 2150
+F 0 "R2" V 3825 2000 50  0000 C CNN
+F 1 "470Ω" V 3800 2150 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 3730 2150 50  0001 C CNN
+F 3 "" H 3800 2150 50  0000 C CNN
+	1    3800 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5880B4A0
+P 3800 2250
+F 0 "R3" V 3825 2100 50  0000 C CNN
+F 1 "470Ω" V 3800 2250 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 3730 2250 50  0001 C CNN
+F 3 "" H 3800 2250 50  0000 C CNN
+	1    3800 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5880B4F0
+P 3800 2350
+F 0 "R4" V 3825 2200 50  0000 C CNN
+F 1 "470Ω" V 3800 2350 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 3730 2350 50  0001 C CNN
+F 3 "" H 3800 2350 50  0000 C CNN
+	1    3800 2350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4050 2350 2    50   Output ~ 0
+D0
+Text GLabel 4050 2250 2    50   Output ~ 0
+D1
+Text GLabel 4050 2150 2    50   Output ~ 0
+D2
+Text GLabel 4050 2050 2    50   Output ~ 0
+D3
+Wire Wire Line
+	3950 2050 4050 2050
+Wire Wire Line
+	4050 2150 3950 2150
+Wire Wire Line
+	3950 2250 4050 2250
+Wire Wire Line
+	4050 2350 3950 2350
+$Comp
+L Header_1X2 J1
+U 1 1 5880D5B6
+P 800 1050
+F 0 "J1" H 740 1280 60  0000 C CNN
+F 1 "PWR" H 775 1200 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 800 1050 60  0001 C CNN
+F 3 "" H 800 1050 60  0000 C CNN
+	1    800  1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 5880D955
+P 1250 700
+F 0 "#PWR09" H 1250 550 50  0001 C CNN
+F 1 "+5V" H 1250 840 50  0000 C CNN
+F 2 "" H 1250 700 50  0000 C CNN
+F 3 "" H 1250 700 50  0000 C CNN
+	1    1250 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 5880D9DD
+P 1250 1400
+F 0 "#PWR010" H 1250 1150 50  0001 C CNN
+F 1 "GND" H 1250 1250 50  0000 C CNN
+F 2 "" H 1250 1400 50  0000 C CNN
+F 3 "" H 1250 1400 50  0000 C CNN
+	1    1250 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Header_1X6 J2
+U 1 1 5880E098
+P 800 1850
+F 0 "J2" H 720 2280 50  0000 C CNN
+F 1 "PICKIT" H 800 2200 50  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x06" H 800 1850 50  0001 C CNN
+F 3 "" H 800 1850 50  0000 C CNN
+	1    800  1850
+	1    0    0    -1  
+$EndComp
+Text GLabel 900  1600 2    50   BiDi ~ 0
+Vpp
+Text GLabel 900  1700 2    50   BiDi ~ 0
+Vdd
+Text GLabel 900  1800 2    50   BiDi ~ 0
+Vss
+Text GLabel 900  1900 2    50   BiDi ~ 0
+PGD
+Text GLabel 900  2000 2    50   BiDi ~ 0
+PGC
+Text GLabel 2750 800  2    50   BiDi ~ 0
+Vdd
+Text GLabel 2750 1300 2    50   BiDi ~ 0
+Vss
+$Comp
+L Header_1X4 J3
+U 1 1 5880EBCA
+P 750 2750
+F 0 "J3" H 750 3150 60  0000 C CNN
+F 1 "Sensor" H 850 3050 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x04" H 750 2750 60  0001 C CNN
+F 3 "" H 750 2750 60  0000 C CNN
+	1    750  2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR011
+U 1 1 5880ECBD
+P 1150 2450
+F 0 "#PWR011" H 1150 2300 50  0001 C CNN
+F 1 "+5V" H 1150 2590 50  0000 C CNN
+F 2 "" H 1150 2450 50  0000 C CNN
+F 3 "" H 1150 2450 50  0000 C CNN
+	1    1150 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 5880EEEC
+P 1150 2950
+F 0 "#PWR012" H 1150 2700 50  0001 C CNN
+F 1 "GND" H 1150 2800 50  0000 C CNN
+F 2 "" H 1150 2950 50  0000 C CNN
+F 3 "" H 1150 2950 50  0000 C CNN
+	1    1150 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 2950 1150 2850
+Wire Wire Line
+	1150 2850 900  2850
+Wire Wire Line
+	900  2550 1150 2550
+Wire Wire Line
+	1150 2550 1150 2450
+Text GLabel 1400 2650 2    50   Input ~ 0
+Trigger
+Text GLabel 900  2750 2    50   Output ~ 0
+Echo
+$Comp
+L Header_1X6 J4
+U 1 1 5880F26B
+P 800 3650
+F 0 "J4" H 720 4080 50  0000 C CNN
+F 1 "DS3231" H 825 4000 50  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x06" H 800 3650 50  0001 C CNN
+F 3 "" H 800 3650 50  0000 C CNN
+	1    800  3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 900  3400 2    50   Output ~ 0
+32K
+Text GLabel 900  3500 2    50   Output ~ 0
+SQW
+Text GLabel 900  3600 2    50   Input ~ 0
+SCL
+Text GLabel 900  3700 2    50   BiDi ~ 0
+SDA
+$Comp
+L +5V #PWR013
+U 1 1 5880F502
+P 1250 3700
+F 0 "#PWR013" H 1250 3550 50  0001 C CNN
+F 1 "+5V" H 1250 3840 50  0000 C CNN
+F 2 "" H 1250 3700 50  0000 C CNN
+F 3 "" H 1250 3700 50  0000 C CNN
+	1    1250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 5880F548
+P 1250 4000
+F 0 "#PWR014" H 1250 3750 50  0001 C CNN
+F 1 "GND" H 1250 3850 50  0000 C CNN
+F 2 "" H 1250 4000 50  0000 C CNN
+F 3 "" H 1250 4000 50  0000 C CNN
+	1    1250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4000 1250 3900
+Wire Wire Line
+	1250 3900 900  3900
+Wire Wire Line
+	900  3800 1250 3800
+Wire Wire Line
+	1250 3800 1250 3700
+$Comp
+L Rotary_Encoder RE1
+U 1 1 5880FB26
+P 8350 4900
+F 0 "RE1" H 8350 5350 50  0000 C CNN
+F 1 "Rotary_Encoder" H 8350 5250 50  0000 C CNN
+F 2 "Custom Footprint:Rotary_Encoder" H 8350 4900 50  0001 C CNN
+F 3 "" H 8350 4900 50  0000 C CNN
+	1    8350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR015
+U 1 1 5880FD95
+P 7750 4600
+F 0 "#PWR015" H 7750 4450 50  0001 C CNN
+F 1 "+5V" H 7750 4740 50  0000 C CNN
+F 2 "" H 7750 4600 50  0000 C CNN
+F 3 "" H 7750 4600 50  0000 C CNN
+	1    7750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R14
+U 1 1 5880FDDD
+P 7750 5350
+F 0 "R14" H 7875 5375 50  0000 C CNN
+F 1 "10kΩ" H 7900 5325 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 7680 5350 50  0001 C CNN
+F 3 "" H 7750 5350 50  0000 C CNN
+	1    7750 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 5880FE8F
+P 9100 4450
+F 0 "R12" H 9225 4475 50  0000 C CNN
+F 1 "10kΩ" H 9250 4425 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 9030 4450 50  0001 C CNN
+F 3 "" H 9100 4450 50  0000 C CNN
+	1    9100 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 5880FF63
+P 9600 4450
+F 0 "R13" H 9725 4475 50  0000 C CNN
+F 1 "10kΩ" H 9750 4425 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 9530 4450 50  0001 C CNN
+F 3 "" H 9600 4450 50  0000 C CNN
+	1    9600 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 5100 9850 5100
+Wire Wire Line
+	9600 4600 9600 5200
+Wire Wire Line
+	8850 4700 9850 4700
+Wire Wire Line
+	9100 4700 9100 4600
+$Comp
+L GND #PWR016
+U 1 1 588100BB
+P 8950 4900
+F 0 "#PWR016" H 8950 4650 50  0001 C CNN
+F 1 "GND" H 8950 4750 50  0000 C CNN
+F 2 "" H 8950 4900 50  0000 C CNN
+F 3 "" H 8950 4900 50  0000 C CNN
+	1    8950 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4900 8850 4900
+$Comp
+L +5V #PWR017
+U 1 1 58810192
+P 9350 4100
+F 0 "#PWR017" H 9350 3950 50  0001 C CNN
+F 1 "+5V" H 9350 4240 50  0000 C CNN
+F 2 "" H 9350 4100 50  0000 C CNN
+F 3 "" H 9350 4100 50  0000 C CNN
+	1    9350 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 4100 9350 4200
+Wire Wire Line
+	9100 4200 9600 4200
+Wire Wire Line
+	9100 4200 9100 4300
+Wire Wire Line
+	9600 4200 9600 4300
+Connection ~ 9350 4200
+Wire Wire Line
+	7750 4600 7750 4700
+Wire Wire Line
+	7750 4700 7850 4700
+Wire Wire Line
+	7650 5100 7850 5100
+Wire Wire Line
+	7750 5100 7750 5200
+$Comp
+L GND #PWR018
+U 1 1 58810472
+P 7750 5500
+F 0 "#PWR018" H 7750 5250 50  0001 C CNN
+F 1 "GND" H 7750 5350 50  0000 C CNN
+F 2 "" H 7750 5500 50  0000 C CNN
+F 3 "" H 7750 5500 50  0000 C CNN
+	1    7750 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 7650 5100 0    50   Output ~ 0
+RotarySW
+Connection ~ 7750 5100
+Text GLabel 9850 4700 2    50   Output ~ 0
+RotaryCLK1
+Text GLabel 9850 5100 2    50   Output ~ 0
+RotaryCLK2
+Connection ~ 9600 5100
+Connection ~ 9100 4700
+Text GLabel 2450 2450 0    50   Input ~ 0
+DI
+Text GLabel 2450 2550 0    50   Input ~ 0
+CLK
+Wire Wire Line
+	2450 2550 2650 2550
+Wire Wire Line
+	2450 2450 2650 2450
+Wire Wire Line
+	2550 2450 2550 2350
+Wire Wire Line
+	2550 2350 2650 2350
+Connection ~ 2550 2450
+Text GLabel 4900 4400 2    50   Input ~ 0
+RotaryCLK1
+Text GLabel 4900 4500 2    50   Input ~ 0
+RotaryCLK2
+Text GLabel 3700 4400 0    50   Input ~ 0
+RotarySW
+Text GLabel 4900 4600 2    50   Input ~ 0
+SQW
+$Comp
+L Header_1X2 J5
+U 1 1 58814BD6
+P 800 4700
+F 0 "J5" H 740 4930 60  0000 C CNN
+F 1 "Buzzer" H 775 4850 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 800 4700 60  0001 C CNN
+F 3 "" H 800 4700 60  0000 C CNN
+	1    800  4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR019
+U 1 1 5881566D
+P 1150 4550
+F 0 "#PWR019" H 1150 4400 50  0001 C CNN
+F 1 "+5V" H 1150 4690 50  0000 C CNN
+F 2 "" H 1150 4550 50  0000 C CNN
+F 3 "" H 1150 4550 50  0000 C CNN
+	1    1150 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4550 1150 4650
+Wire Wire Line
+	1150 4650 900  4650
+$Comp
+L Q_NPN_CBE Q5
+U 1 1 58816141
+P 1250 5050
+F 0 "Q5" H 1525 5100 50  0000 R CNN
+F 1 "2N3904" H 1725 5000 50  0000 R CNN
+F 2 "Custom Footprint:TO-92_Inline_Wide" H 1450 5150 50  0001 C CNN
+F 3 "" H 1250 5050 50  0000 C CNN
+	1    1250 5050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 4850 1150 4750
+Wire Wire Line
+	1150 4750 900  4750
+$Comp
+L GND #PWR020
+U 1 1 58816C17
+P 1150 5250
+F 0 "#PWR020" H 1150 5000 50  0001 C CNN
+F 1 "GND" H 1150 5100 50  0000 C CNN
+F 2 "" H 1150 5250 50  0000 C CNN
+F 3 "" H 1150 5250 50  0000 C CNN
+	1    1150 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R15
+U 1 1 5881760B
+P 1600 5050
+F 0 "R15" V 1525 5050 50  0000 C CNN
+F 1 "470Ω" V 1600 5050 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 1530 5050 50  0001 C CNN
+F 3 "" H 1600 5050 50  0000 C CNN
+	1    1600 5050
+	0    1    1    0   
+$EndComp
+Text GLabel 1750 5050 2    50   Input ~ 0
+Buzzer
+Text GLabel 4900 4700 2    50   Input ~ 0
+Buzzer
+$Comp
+L PIC16F1509 U3
+U 1 1 5881D5E5
+P 4300 4700
+F 0 "U3" H 4300 5275 60  0000 C CNN
+F 1 "PIC16F1509" H 4300 5200 60  0000 C CNN
+F 2 "Custom Footprint:IC_PDIP_20pin" H 4300 4700 60  0001 C CNN
+F 3 "" H 4300 4700 60  0000 C CNN
+	1    4300 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2450 4400 2450
+Wire Wire Line
+	4400 2550 3650 2550
+Wire Wire Line
+	3650 2650 4400 2650
+Wire Wire Line
+	4400 2750 3650 2750
+$Comp
+L Header_1X3 SW1
+U 1 1 5882081A
+P 750 5950
+F 0 "SW1" H 750 6225 60  0000 C CNN
+F 1 "Switch" H 800 6150 60  0000 C CNN
+F 2 "Custom Footprint:Switch_3-Pin" H 750 5950 60  0001 C CNN
+F 3 "" H 750 5950 60  0000 C CNN
+	1    750  5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR021
+U 1 1 58820BC7
+P 1600 5700
+F 0 "#PWR021" H 1600 5550 50  0001 C CNN
+F 1 "+5V" H 1600 5840 50  0000 C CNN
+F 2 "" H 1600 5700 50  0000 C CNN
+F 3 "" H 1600 5700 50  0000 C CNN
+	1    1600 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5950 1600 5700
+Wire Wire Line
+	850  5950 1600 5950
+$Comp
+L R R16
+U 1 1 58820FE0
+P 950 6300
+F 0 "R16" H 1075 6325 50  0000 C CNN
+F 1 "10kΩ" H 1100 6275 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 880 6300 50  0001 C CNN
+F 3 "" H 950 6300 50  0000 C CNN
+	1    950  6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R17
+U 1 1 5882175D
+P 1300 6300
+F 0 "R17" H 1425 6325 50  0000 C CNN
+F 1 "10kΩ" H 1450 6275 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 1230 6300 50  0001 C CNN
+F 3 "" H 1300 6300 50  0000 C CNN
+	1    1300 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  5850 1800 5850
+Wire Wire Line
+	1300 5850 1300 6150
+Wire Wire Line
+	850  6050 1800 6050
+Wire Wire Line
+	950  6050 950  6150
+$Comp
+L GND #PWR022
+U 1 1 588219DD
+P 1125 6650
+F 0 "#PWR022" H 1125 6400 50  0001 C CNN
+F 1 "GND" H 1125 6500 50  0000 C CNN
+F 2 "" H 1125 6650 50  0000 C CNN
+F 3 "" H 1125 6650 50  0000 C CNN
+	1    1125 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1125 6650 1125 6550
+Wire Wire Line
+	950  6550 1300 6550
+Wire Wire Line
+	950  6550 950  6450
+Wire Wire Line
+	1300 6550 1300 6450
+Connection ~ 1125 6550
+Text GLabel 1800 5850 2    50   Output ~ 0
+SW1
+Text GLabel 1800 6050 2    50   Output ~ 0
+SW2
+Connection ~ 950  6050
+Connection ~ 1300 5850
+Text GLabel 3700 4800 0    50   Input ~ 0
+SW2
+Text GLabel 3700 4700 0    50   Input ~ 0
+SW1
+Text GLabel 4900 5100 2    50   Input ~ 0
+32K
+Text GLabel 6400 5200 2    50   Output ~ 0
+SCL
+Text GLabel 6400 5000 2    50   BiDi ~ 0
+SDA
+$Comp
+L R R18
+U 1 1 5882518C
+P 5650 4750
+F 0 "R18" H 5775 4775 50  0000 C CNN
+F 1 "3.9kΩ" H 5800 4725 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 5580 4750 50  0001 C CNN
+F 3 "" H 5650 4750 50  0000 C CNN
+	1    5650 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 588255C6
+P 6150 4750
+F 0 "R19" H 6275 4775 50  0000 C CNN
+F 1 "3.9kΩ" H 6300 4725 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 6080 4750 50  0001 C CNN
+F 3 "" H 6150 4750 50  0000 C CNN
+	1    6150 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 5200 6400 5200
+Wire Wire Line
+	6150 5200 6150 4900
+Connection ~ 6150 5200
+Wire Wire Line
+	5650 4900 5650 5000
+Wire Wire Line
+	4900 5000 6400 5000
+Connection ~ 5650 5000
+$Comp
+L +5V #PWR023
+U 1 1 588259FB
+P 5900 4400
+F 0 "#PWR023" H 5900 4250 50  0001 C CNN
+F 1 "+5V" H 5900 4540 50  0000 C CNN
+F 2 "" H 5900 4400 50  0000 C CNN
+F 3 "" H 5900 4400 50  0000 C CNN
+	1    5900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4400 5900 4500
+Wire Wire Line
+	5650 4500 6150 4500
+Wire Wire Line
+	5650 4500 5650 4600
+Wire Wire Line
+	6150 4500 6150 4600
+Connection ~ 5900 4500
+Text GLabel 3700 5000 0    50   Output ~ 0
+DI
+Text GLabel 3700 5100 0    50   Output ~ 0
+CLK
+Text GLabel 3700 4600 0    50   Output ~ 0
+Trigger
+Text GLabel 3700 4500 0    50   Input ~ 0
+Echo
+$Comp
+L +5V #PWR024
+U 1 1 5882913D
+P 3600 4200
+F 0 "#PWR024" H 3600 4050 50  0001 C CNN
+F 1 "+5V" H 3600 4340 50  0000 C CNN
+F 2 "" H 3600 4200 50  0000 C CNN
+F 3 "" H 3600 4200 50  0000 C CNN
+	1    3600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4200 3600 4300
+Wire Wire Line
+	3600 4300 3700 4300
+$Comp
+L GND #PWR025
+U 1 1 5882925D
+P 5500 4400
+F 0 "#PWR025" H 5500 4150 50  0001 C CNN
+F 1 "GND" H 5500 4250 50  0000 C CNN
+F 2 "" H 5500 4400 50  0000 C CNN
+F 3 "" H 5500 4400 50  0000 C CNN
+	1    5500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4400 5500 4300
+Wire Wire Line
+	5500 4300 4900 4300
+$Comp
+L C C2
+U 1 1 5882B91D
+P 1500 1050
+F 0 "C2" H 1525 1150 50  0000 L CNN
+F 1 "100nF" H 1500 950 50  0000 L CNN
+F 2 "Custom Footprint:Cap_UnPol_P3" H 1538 900 50  0001 C CNN
+F 3 "" H 1500 1050 50  0000 C CNN
+	1    1500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5882BDBF
+P 1250 1050
+F 0 "C1" H 1275 1150 50  0000 L CNN
+F 1 "100uF" H 1250 950 50  0000 L CNN
+F 2 "Custom Footprint:Cap_Pol_Radial_D8_P2" H 1288 900 50  0001 C CNN
+F 3 "" H 1250 1050 50  0000 C CNN
+	1    1250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5882DA37
+P 1750 1050
+F 0 "C3" H 1775 1150 50  0000 L CNN
+F 1 "100nF" H 1750 950 50  0000 L CNN
+F 2 "Custom Footprint:Cap_UnPol_P3" H 1788 900 50  0001 C CNN
+F 3 "" H 1750 1050 50  0000 C CNN
+	1    1750 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5882DADE
+P 2000 1050
+F 0 "C4" H 2025 1150 50  0000 L CNN
+F 1 "100nF" H 2000 950 50  0000 L CNN
+F 2 "Custom Footprint:Cap_UnPol_P3" H 2038 900 50  0001 C CNN
+F 3 "" H 2000 1050 50  0000 C CNN
+	1    2000 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5882DB6A
+P 2250 1050
+F 0 "C5" H 2275 1150 50  0000 L CNN
+F 1 "100nF" H 2250 950 50  0000 L CNN
+F 2 "Custom Footprint:Cap_UnPol_P3" H 2288 900 50  0001 C CNN
+F 3 "" H 2250 1050 50  0000 C CNN
+	1    2250 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 5882DBF9
+P 2500 1050
+F 0 "C6" H 2525 1150 50  0000 L CNN
+F 1 "100nF" H 2500 950 50  0000 L CNN
+F 2 "Custom Footprint:Cap_UnPol_P3" H 2538 900 50  0001 C CNN
+F 3 "" H 2500 1050 50  0000 C CNN
+	1    2500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1000 1000 1000
+Wire Wire Line
+	1000 1000 1000 800 
+Wire Wire Line
+	1000 800  2750 800 
+Wire Wire Line
+	1250 700  1250 900 
+Connection ~ 1250 800 
+Wire Wire Line
+	1250 1200 1250 1400
+Wire Wire Line
+	1000 1300 2750 1300
+Wire Wire Line
+	1000 1300 1000 1100
+Wire Wire Line
+	1000 1100 900  1100
+Connection ~ 1250 1300
+Wire Wire Line
+	2500 1300 2500 1200
+Wire Wire Line
+	2500 800  2500 900 
+Wire Wire Line
+	1500 800  1500 900 
+Connection ~ 1500 800 
+Wire Wire Line
+	1750 900  1750 800 
+Connection ~ 1750 800 
+Wire Wire Line
+	2000 800  2000 900 
+Connection ~ 2000 800 
+Wire Wire Line
+	2250 900  2250 800 
+Connection ~ 2250 800 
+Wire Wire Line
+	2250 1200 2250 1300
+Connection ~ 2250 1300
+Wire Wire Line
+	2000 1300 2000 1200
+Connection ~ 2000 1300
+Wire Wire Line
+	1750 1200 1750 1300
+Connection ~ 1750 1300
+Wire Wire Line
+	1500 1300 1500 1200
+Connection ~ 1500 1300
+Connection ~ 2500 1300
+Connection ~ 2500 800 
+Text GLabel 9850 4600 2    50   BiDi ~ 0
+PGD
+Text GLabel 9850 5200 2    50   BiDi ~ 0
+PGC
+Wire Wire Line
+	9600 5200 9850 5200
+Wire Wire Line
+	9850 4600 9750 4600
+Wire Wire Line
+	9750 4600 9750 4700
+Connection ~ 9750 4700
+Text GLabel 1500 2275 2    50   BiDi ~ 0
+Vpp
+Wire Wire Line
+	1400 2650 900  2650
+Wire Wire Line
+	1300 2550 1600 2550
+Wire Wire Line
+	1300 2550 1300 2650
+Connection ~ 1300 2650
+$Comp
+L Header_1X2 J6
+U 1 1 5880CD21
+P 1400 2325
+F 0 "J6" H 1340 2555 60  0000 C CNN
+F 1 "Jumper" H 1550 2475 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 1400 2325 60  0001 C CNN
+F 3 "" H 1400 2325 60  0000 C CNN
+	1    1400 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2375 1600 2375
+Wire Wire Line
+	1600 2375 1600 2550
+$EndSCHEMATC

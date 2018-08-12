@@ -1,0 +1,186 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:1 Vpp Latch-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM358 U?
+U 1 1 569A6444
+P 8050 5500
+F 0 "U?" H 8000 5700 50  0001 L CNN
+F 1 "LM358" H 8050 5350 50  0000 L CNN
+F 2 "" H 8050 5500 50  0000 C CNN
+F 3 "" H 8050 5500 50  0000 C CNN
+	1    8050 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 569A64ED
+P 9750 4400
+F 0 "#PWR?" H 9750 4150 50  0001 C CNN
+F 1 "Earth" H 9750 4250 50  0001 C CNN
+F 2 "" H 9750 4400 50  0000 C CNN
+F 3 "" H 9750 4400 50  0000 C CNN
+	1    9750 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 569A6528
+P 8500 5250
+F 0 "R?" V 8580 5250 50  0001 C CNN
+F 1 "10K" H 8700 5250 50  0000 R CNN
+F 2 "" V 8430 5250 50  0000 C CNN
+F 3 "" H 8500 5250 50  0000 C CNN
+	1    8500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 569A655F
+P 8500 4750
+F 0 "RV?" H 8500 4650 50  0001 C CNN
+F 1 "10K" V 8500 4700 50  0000 R CNN
+F 2 "" H 8500 4750 50  0000 C CNN
+F 3 "" H 8500 4750 50  0000 C CNN
+	1    8500 4750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 569A66A5
+P 9300 4550
+F 0 "D?" H 9300 4650 50  0001 C CNN
+F 1 "1N914" V 9300 4750 50  0000 C CNN
+F 2 "" H 9300 4550 50  0000 C CNN
+F 3 "" H 9300 4550 50  0000 C CNN
+	1    9300 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L D D?
+U 1 1 569A6731
+P 9300 4850
+F 0 "D?" H 9300 4950 50  0001 C CNN
+F 1 "1N914" V 9300 5050 50  0000 C CNN
+F 2 "" H 9300 4850 50  0000 C CNN
+F 3 "" H 9300 4850 50  0000 C CNN
+	1    9300 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L D D?
+U 1 1 569A6745
+P 8850 4850
+F 0 "D?" H 8850 4950 50  0001 C CNN
+F 1 "1N914" V 8850 4650 50  0000 C CNN
+F 2 "" H 8850 4850 50  0000 C CNN
+F 3 "" H 8850 4850 50  0000 C CNN
+	1    8850 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D?
+U 1 1 569A6771
+P 8850 4550
+F 0 "D?" H 8850 4650 50  0001 C CNN
+F 1 "1N914" V 8850 4350 50  0000 C CNN
+F 2 "" H 8850 4550 50  0000 C CNN
+F 3 "" H 8850 4550 50  0000 C CNN
+	1    8850 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 5400 7750 5400
+Wire Wire Line
+	7650 4750 7650 5400
+Wire Wire Line
+	8850 5050 8850 5000
+Wire Wire Line
+	9300 5050 9300 5000
+Connection ~ 8850 5050
+Wire Wire Line
+	8500 4400 9750 4400
+Connection ~ 9300 4400
+Wire Wire Line
+	8500 4500 8500 4400
+Connection ~ 8850 4400
+Wire Wire Line
+	8350 4750 7650 4750
+Wire Wire Line
+	8500 5000 8500 5100
+Wire Wire Line
+	8500 5050 9300 5050
+Connection ~ 8500 5050
+Wire Wire Line
+	8500 5400 8500 5500
+Wire Wire Line
+	8500 5500 8350 5500
+$Comp
+L +5V #PWR?
+U 1 1 569A6C1C
+P 7950 5200
+F 0 "#PWR?" H 7950 5050 50  0001 C CNN
+F 1 "+5V" H 7950 5340 50  0000 C CNN
+F 2 "" H 7950 5200 50  0000 C CNN
+F 3 "" H 7950 5200 50  0000 C CNN
+	1    7950 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD -5V
+U 1 1 569A6CA4
+P 7950 5800
+F 0 "-5V" H 7950 5950 50  0000 C CNN
+F 1 "VDD" H 7950 5950 50  0001 C CNN
+F 2 "" H 7950 5800 50  0000 C CNN
+F 3 "" H 7950 5800 50  0000 C CNN
+	1    7950 5800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7750 5600 7350 5600
+Text Label 7350 5600 0    60   ~ 0
+Input
+$EndSCHEMATC

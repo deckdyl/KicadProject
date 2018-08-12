@@ -1,0 +1,559 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Custom Library
+LIBS:LCD&RTC&Rotary-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "FYP Solar Tracker"
+Date "2016-11-21"
+Rev "1"
+Comp "Singapore Polytechnic"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LCD LCD1
+U 1 1 583283FD
+P 3600 5550
+F 0 "LCD1" H 3500 6550 60  0000 C CNN
+F 1 "LCD 2004" H 3500 6450 60  0000 C CNN
+F 2 "Custom Footprint:LCD_2004" H 3600 5550 60  0001 C CNN
+F 3 "" H 3600 5550 60  0000 C CNN
+	1    3600 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LS164 U1
+U 1 1 5832848A
+P 1750 5750
+F 0 "U1" H 1750 6325 60  0000 C CNN
+F 1 "74LS164" H 1750 6250 60  0000 C CNN
+F 2 "Custom Footprint:IC_PDIP_14pin" H 1750 5750 60  0001 C CNN
+F 3 "" H 1750 5750 60  0000 C CNN
+	1    1750 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT POT1
+U 1 1 583284C3
+P 2350 5000
+F 0 "POT1" V 2300 4850 50  0000 C CNN
+F 1 "10kΩ" V 2375 4850 50  0000 C CNN
+F 2 "Custom Footprint:Potentiometer_Bourns_3386" H 2350 5000 50  0001 C CNN
+F 3 "" H 2350 5000 50  0000 C CNN
+	1    2350 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Header_1X5 RTC1
+U 1 1 58328536
+P 1200 1600
+F 0 "RTC1" H 1225 2000 60  0000 C CNN
+F 1 "DS1307" H 1300 1900 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x05" H 1200 1600 60  0001 C CNN
+F 3 "" H 1200 1600 60  0000 C CNN
+	1    1200 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5832881A
+P 2600 5450
+F 0 "#PWR01" H 2600 5200 50  0001 C CNN
+F 1 "GND" H 2600 5300 50  0000 C CNN
+F 2 "" H 2600 5450 50  0000 C CNN
+F 3 "" H 2600 5450 50  0000 C CNN
+	1    2600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 5832886A
+P 2750 4650
+F 0 "#PWR02" H 2750 4500 50  0001 C CNN
+F 1 "+5V" H 2750 4790 50  0000 C CNN
+F 2 "" H 2750 4650 50  0000 C CNN
+F 3 "" H 2750 4650 50  0000 C CNN
+	1    2750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 58328929
+P 2550 6250
+F 0 "#PWR03" H 2550 6100 50  0001 C CNN
+F 1 "+5V" H 2550 6390 50  0000 C CNN
+F 2 "" H 2550 6250 50  0000 C CNN
+F 3 "" H 2550 6250 50  0000 C CNN
+	1    2550 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5832896E
+P 2750 6550
+F 0 "#PWR04" H 2750 6300 50  0001 C CNN
+F 1 "GND" H 2750 6400 50  0000 C CNN
+F 2 "" H 2750 6550 50  0000 C CNN
+F 3 "" H 2750 6550 50  0000 C CNN
+	1    2750 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR05
+U 1 1 58328AC6
+P 1150 5300
+F 0 "#PWR05" H 1150 5150 50  0001 C CNN
+F 1 "+5V" H 1150 5440 50  0000 C CNN
+F 2 "" H 1150 5300 50  0000 C CNN
+F 3 "" H 1150 5300 50  0000 C CNN
+	1    1150 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 58328B21
+P 1150 6200
+F 0 "#PWR06" H 1150 5950 50  0001 C CNN
+F 1 "GND" H 1150 6050 50  0000 C CNN
+F 2 "" H 1150 6200 50  0000 C CNN
+F 3 "" H 1150 6200 50  0000 C CNN
+	1    1150 6200
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 5300 0    50   Input ~ 0
+LCD_EN
+Text GLabel 1050 5700 0    50   Input ~ 0
+LCD_DAT
+Text GLabel 1050 5900 0    50   Input ~ 0
+LCD_CLK
+Text GLabel 2350 1800 2    50   BiDi ~ 0
+SDA
+Text GLabel 2350 1700 2    50   Input ~ 0
+SCL
+$Comp
+L GND #PWR07
+U 1 1 58328E18
+P 1450 1500
+F 0 "#PWR07" H 1450 1250 50  0001 C CNN
+F 1 "GND" H 1450 1350 50  0000 C CNN
+F 2 "" H 1450 1500 50  0000 C CNN
+F 3 "" H 1450 1500 50  0000 C CNN
+	1    1450 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 58328EA3
+P 1600 1500
+F 0 "R1" H 1700 1525 50  0000 C CNN
+F 1 "3.9kΩ" H 1750 1450 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 1530 1500 50  0001 C CNN
+F 3 "" H 1600 1500 50  0000 C CNN
+	1    1600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 58328EFB
+P 2100 1500
+F 0 "R2" H 2200 1525 50  0000 C CNN
+F 1 "3.9kΩ" H 2250 1450 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 2030 1500 50  0001 C CNN
+F 3 "" H 2100 1500 50  0000 C CNN
+	1    2100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR08
+U 1 1 58328E5D
+P 2100 1200
+F 0 "#PWR08" H 2100 1050 50  0001 C CNN
+F 1 "+5V" H 2100 1340 50  0000 C CNN
+F 2 "" H 2100 1200 50  0000 C CNN
+F 3 "" H 2100 1200 50  0000 C CNN
+	1    2100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Rotary_Encoder RE1
+U 1 1 58328990
+P 1600 3250
+F 0 "RE1" H 1600 3700 50  0000 C CNN
+F 1 "Rotary_Encoder" H 1600 3600 50  0000 C CNN
+F 2 "Custom Footprint:Rotary_Encoder" H 1600 3250 50  0001 C CNN
+F 3 "" H 1600 3250 50  0000 C CNN
+	1    1600 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR09
+U 1 1 58328A68
+P 1000 2950
+F 0 "#PWR09" H 1000 2800 50  0001 C CNN
+F 1 "+5V" H 1000 3090 50  0000 C CNN
+F 2 "" H 1000 2950 50  0000 C CNN
+F 3 "" H 1000 2950 50  0000 C CNN
+	1    1000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 58328AC4
+P 1000 3700
+F 0 "R5" H 1100 3725 50  0000 C CNN
+F 1 "10kΩ" H 1150 3650 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 930 3700 50  0001 C CNN
+F 3 "" H 1000 3700 50  0000 C CNN
+	1    1000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 58328BA5
+P 1000 3850
+F 0 "#PWR010" H 1000 3600 50  0001 C CNN
+F 1 "GND" H 1000 3700 50  0000 C CNN
+F 2 "" H 1000 3850 50  0000 C CNN
+F 3 "" H 1000 3850 50  0000 C CNN
+	1    1000 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 900  3450 0    60   Output ~ 0
+SW
+$Comp
+L GND #PWR011
+U 1 1 58328CD3
+P 2200 3250
+F 0 "#PWR011" H 2200 3000 50  0001 C CNN
+F 1 "GND" H 2200 3100 50  0000 C CNN
+F 2 "" H 2200 3250 50  0000 C CNN
+F 3 "" H 2200 3250 50  0000 C CNN
+	1    2200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 58328F3D
+P 2350 2800
+F 0 "R3" H 2450 2825 50  0000 C CNN
+F 1 "10kΩ" H 2500 2750 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 2280 2800 50  0001 C CNN
+F 3 "" H 2350 2800 50  0000 C CNN
+	1    2350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 58329031
+P 2700 2800
+F 0 "R4" H 2800 2825 50  0000 C CNN
+F 1 "10kΩ" H 2850 2750 50  0000 C CNN
+F 2 "Custom Footprint:Resistor-0.25W" V 2630 2800 50  0001 C CNN
+F 3 "" H 2700 2800 50  0000 C CNN
+	1    2700 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR012
+U 1 1 583290ED
+P 2550 2450
+F 0 "#PWR012" H 2550 2300 50  0001 C CNN
+F 1 "+5V" H 2550 2590 50  0000 C CNN
+F 2 "" H 2550 2450 50  0000 C CNN
+F 3 "" H 2550 2450 50  0000 C CNN
+	1    2550 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 3050 2    60   Output ~ 0
+RE1
+Text GLabel 2800 3450 2    60   Output ~ 0
+RE2
+Text Notes 975  900  0    80   ~ 0
+Real-Time Clock (DS1307)
+Text Notes 1175 2550 0    80   ~ 0
+Rotary Encoder
+Text Notes 2200 4450 0    80   ~ 0
+LCD
+Wire Wire Line
+	2250 6100 3000 6100
+Wire Wire Line
+	3000 6000 2250 6000
+Wire Wire Line
+	2250 5900 3000 5900
+Wire Wire Line
+	3000 5800 2250 5800
+Wire Wire Line
+	2250 5400 2500 5400
+Wire Wire Line
+	2500 5400 2500 5100
+Wire Wire Line
+	2500 5100 3000 5100
+Wire Wire Line
+	2600 4800 2600 5450
+Wire Wire Line
+	2600 4800 3000 4800
+Wire Wire Line
+	3000 5200 2600 5200
+Connection ~ 2600 5200
+Wire Wire Line
+	2750 4650 2750 4900
+Wire Wire Line
+	2750 4900 3000 4900
+Wire Wire Line
+	2350 5250 2350 5300
+Wire Wire Line
+	2350 5300 2600 5300
+Connection ~ 2600 5300
+Wire Wire Line
+	2350 4750 2350 4700
+Wire Wire Line
+	2350 4700 2750 4700
+Connection ~ 2750 4700
+Wire Wire Line
+	2500 5000 3000 5000
+Wire Wire Line
+	3000 6200 2550 6200
+Wire Wire Line
+	2550 6200 2550 6250
+Wire Wire Line
+	2750 6550 2750 6300
+Wire Wire Line
+	2750 6300 3000 6300
+Wire Wire Line
+	1150 5300 1150 5500
+Wire Wire Line
+	1150 5400 1250 5400
+Wire Wire Line
+	1150 5500 1250 5500
+Connection ~ 1150 5400
+Wire Wire Line
+	1150 6200 1150 6100
+Wire Wire Line
+	1150 6100 1250 6100
+Wire Wire Line
+	1050 5700 1250 5700
+Wire Wire Line
+	1150 5700 1150 5800
+Wire Wire Line
+	1150 5800 1250 5800
+Wire Wire Line
+	1050 5900 1250 5900
+Connection ~ 1150 5700
+Wire Wire Line
+	1450 1500 1350 1500
+Wire Wire Line
+	2100 1200 2100 1350
+Wire Wire Line
+	1400 1300 2100 1300
+Wire Wire Line
+	1400 1300 1400 1400
+Wire Wire Line
+	1400 1400 1350 1400
+Wire Wire Line
+	1600 1350 1600 1300
+Connection ~ 1600 1300
+Connection ~ 2100 1300
+Wire Wire Line
+	1350 1800 2350 1800
+Wire Wire Line
+	1350 1700 2350 1700
+Wire Wire Line
+	1600 1650 1600 1700
+Connection ~ 1600 1700
+Wire Wire Line
+	2100 1650 2100 1800
+Connection ~ 2100 1800
+Wire Wire Line
+	1000 2950 1000 3050
+Wire Wire Line
+	1000 3050 1100 3050
+Wire Wire Line
+	1000 3550 1000 3450
+Wire Wire Line
+	900  3450 1100 3450
+Connection ~ 1000 3450
+Wire Wire Line
+	2200 3250 2100 3250
+Wire Wire Line
+	2100 3450 2800 3450
+Wire Wire Line
+	2700 3450 2700 2950
+Wire Wire Line
+	2100 3050 2800 3050
+Wire Wire Line
+	2350 3050 2350 2950
+Wire Wire Line
+	2350 2650 2350 2550
+Wire Wire Line
+	2350 2550 2700 2550
+Wire Wire Line
+	2700 2550 2700 2650
+Wire Wire Line
+	2550 2550 2550 2450
+Connection ~ 2550 2550
+Connection ~ 2350 3050
+Connection ~ 2700 3450
+Wire Notes Line
+	3150 475  3150 4100
+Wire Notes Line
+	475  4100 11225 4100
+Wire Notes Line
+	475  2200 3150 2200
+Wire Notes Line
+	4000 4100 4000 7800
+Text GLabel 5800 2750 2    50   Output ~ 0
+LCD_CLK
+Text GLabel 5800 2850 2    50   Output ~ 0
+LCD_DAT
+Text GLabel 5800 2650 2    50   Output ~ 0
+LCD_EN
+Text GLabel 5800 2350 2    50   Input ~ 0
+RE1
+Text GLabel 5800 2450 2    50   Input ~ 0
+RE2
+Text GLabel 5800 1950 2    50   BiDi ~ 0
+SDA
+Text GLabel 5800 2050 2    50   Output ~ 0
+SCL
+$Comp
+L Header_1X6 J3
+U 1 1 586A15D1
+P 5700 2600
+F 0 "J3" H 5620 3030 50  0000 C CNN
+F 1 "I/O" H 5650 2950 50  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x06" H 5700 2600 50  0001 C CNN
+F 3 "" H 5700 2600 50  0000 C CNN
+	1    5700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Header_1X2 J2
+U 1 1 586A1614
+P 5700 2000
+F 0 "J2" H 5640 2230 60  0000 C CNN
+F 1 "I2C" H 5650 2150 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 5700 2000 60  0001 C CNN
+F 3 "" H 5700 2000 60  0000 C CNN
+	1    5700 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Header_1X2 J1
+U 1 1 586A164B
+P 5700 1250
+F 0 "J1" H 5640 1480 60  0000 C CNN
+F 1 "PWR" H 5675 1400 60  0000 C CNN
+F 2 "Custom Footprint:Pin_Header_Straight_1x02" H 5700 1250 60  0001 C CNN
+F 3 "" H 5700 1250 60  0000 C CNN
+	1    5700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR013
+U 1 1 586A1AF3
+P 5900 1000
+F 0 "#PWR013" H 5900 850 50  0001 C CNN
+F 1 "+5V" H 5900 1140 50  0000 C CNN
+F 2 "" H 5900 1000 50  0000 C CNN
+F 3 "" H 5900 1000 50  0000 C CNN
+	1    5900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR014
+U 1 1 586A1B21
+P 5900 1500
+F 0 "#PWR014" H 5900 1250 50  0001 C CNN
+F 1 "GND" H 5900 1350 50  0000 C CNN
+F 2 "" H 5900 1500 50  0000 C CNN
+F 3 "" H 5900 1500 50  0000 C CNN
+	1    5900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 586A1B4F
+P 6100 1250
+F 0 "C1" H 6125 1350 50  0000 L CNN
+F 1 "100uF" H 6100 1150 50  0000 L CNN
+F 2 "Custom Footprint:Cap_Pol_Radial_D10_P3" H 6138 1100 50  0001 C CNN
+F 3 "" H 6100 1250 50  0000 C CNN
+	1    6100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 586A1C5E
+P 6350 1250
+F 0 "C2" H 6375 1350 50  0000 L CNN
+F 1 "100nF" H 6350 1150 50  0000 L CNN
+F 2 "Custom Footprint:Cap_UnPol_P3" H 6388 1100 50  0001 C CNN
+F 3 "" H 6350 1250 50  0000 C CNN
+	1    6350 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1400 6350 1450
+Wire Wire Line
+	6350 1450 5850 1450
+Wire Wire Line
+	5850 1450 5850 1300
+Wire Wire Line
+	5850 1300 5800 1300
+Wire Wire Line
+	5800 1200 5850 1200
+Wire Wire Line
+	5850 1200 5850 1050
+Wire Wire Line
+	5850 1050 6350 1050
+Wire Wire Line
+	6350 1050 6350 1100
+Wire Wire Line
+	6100 1100 6100 1050
+Connection ~ 6100 1050
+Wire Wire Line
+	5900 1050 5900 1000
+Connection ~ 5900 1050
+Wire Wire Line
+	5900 1500 5900 1450
+Connection ~ 5900 1450
+Wire Wire Line
+	6100 1450 6100 1400
+Connection ~ 6100 1450
+Text GLabel 5800 2550 2    50   Input ~ 0
+SW
+$EndSCHEMATC

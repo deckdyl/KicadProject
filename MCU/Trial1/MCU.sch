@@ -1,0 +1,192 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Custom Library
+LIBS:MCU-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date "2018-04-21"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 8412 2912 988  1288
+U 5ADA1728
+F0 "PORTA" 60
+F1 "PORTA.sch" 60
+F2 "BUS0" B L 8412 3200 60 
+F3 "BUS1" B L 8412 3300 60 
+F4 "BUS2" B L 8412 3400 60 
+F5 "BUS3" B L 8412 3500 60 
+F6 "BUS4" B L 8412 3600 60 
+F7 "BUS5" B L 8412 3700 60 
+F8 "BUS6" B L 8412 3800 60 
+F9 "BUS7" B L 8412 3900 60 
+F10 "+5V" B L 8412 3000 60 
+F11 "GND" B L 8412 4100 60 
+$EndSheet
+$Sheet
+S 8412 4412 988  1288
+U 5ADBAFC0
+F0 "PORTB" 60
+F1 "PORTB.sch" 60
+F2 "BUS0" B L 8412 4700 60 
+F3 "BUS1" B L 8412 4800 60 
+F4 "BUS2" B L 8412 4900 60 
+F5 "BUS3" B L 8412 5000 60 
+F6 "BUS4" B L 8412 5100 60 
+F7 "BUS5" B L 8412 5200 60 
+F8 "BUS6" B L 8412 5300 60 
+F9 "BUS7" B L 8412 5400 60 
+F10 "+5V" B L 8412 4500 60 
+F11 "GND" B L 8412 5600 60 
+$EndSheet
+$Comp
+L Header_1X2 J?
+U 1 1 5ADDDB2D
+P 3600 2850
+F 0 "J?" H 3540 3080 60  0000 C CNN
+F 1 "Header_1X2" H 3750 3000 60  0000 C CNN
+F 2 "" H 3600 2850 60  0000 C CNN
+F 3 "" H 3600 2850 60  0000 C CNN
+	1    3600 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ADDDD81
+P 3700 2900
+F 0 "#PWR?" H 3700 2650 50  0001 C CNN
+F 1 "GND" H 3700 2750 50  0000 C CNN
+F 2 "" H 3700 2900 50  0001 C CNN
+F 3 "" H 3700 2900 50  0001 C CNN
+	1    3700 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2800 4200 2800
+Text Label 4200 2800 2    60   ~ 0
+CLK
+$Comp
+L 74LS163 U?
+U 1 1 5ADDE342
+P 4700 3150
+F 0 "U?" H 4700 4200 60  0000 C CNN
+F 1 "74LS163" H 4700 4100 60  0000 C CNN
+F 2 "" H 4700 3150 60  0001 C CNN
+F 3 "" H 4700 3150 60  0001 C CNN
+	1    4700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5ADDE441
+P 5200 2300
+F 0 "#PWR?" H 5200 2150 50  0001 C CNN
+F 1 "+5V" H 5200 2440 50  0000 C CNN
+F 2 "" H 5200 2300 50  0001 C CNN
+F 3 "" H 5200 2300 50  0001 C CNN
+	1    5200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ADDE4D1
+P 5200 2400
+F 0 "#PWR?" H 5200 2150 50  0001 C CNN
+F 1 "GND" H 5200 2250 50  0000 C CNN
+F 2 "" H 5200 2400 50  0001 C CNN
+F 3 "" H 5200 2400 50  0001 C CNN
+	1    5200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5ADDE561
+P 4100 3400
+F 0 "#PWR?" H 4100 3150 50  0001 C CNN
+F 1 "GND" H 4100 3250 50  0000 C CNN
+F 2 "" H 4100 3400 50  0001 C CNN
+F 3 "" H 4100 3400 50  0001 C CNN
+	1    4100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3000 4100 3400
+Wire Wire Line
+	4100 3300 4200 3300
+Wire Wire Line
+	4100 3200 4200 3200
+Connection ~ 4100 3300
+Wire Wire Line
+	4100 3100 4200 3100
+Connection ~ 4100 3200
+Wire Wire Line
+	4100 3000 4200 3000
+Connection ~ 4100 3100
+$Comp
+L +5V #PWR?
+U 1 1 5ADDE704
+P 4100 2200
+F 0 "#PWR?" H 4100 2050 50  0001 C CNN
+F 1 "+5V" H 4100 2340 50  0000 C CNN
+F 2 "" H 4100 2200 50  0001 C CNN
+F 3 "" H 4100 2200 50  0001 C CNN
+	1    4100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2200 4100 2700
+Wire Wire Line
+	4100 2300 4200 2300
+Wire Wire Line
+	4100 2400 4200 2400
+Connection ~ 4100 2300
+Wire Wire Line
+	4100 2600 4200 2600
+Connection ~ 4100 2400
+Wire Wire Line
+	4100 2700 4200 2700
+Connection ~ 4100 2600
+Text Label 5700 3000 2    60   ~ 0
+CLK/2
+Wire Wire Line
+	5700 3000 5200 3000
+$EndSCHEMATC
