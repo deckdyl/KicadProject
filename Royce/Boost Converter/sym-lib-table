@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name TPS55340)(type Legacy)(uri "/home/joyce/Desktop/KiCAD Projects/Boost Converter/Boost Converter/TPS55340.lib")(options "")(descr ""))
+)
