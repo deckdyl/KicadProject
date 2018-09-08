@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "I2C-Extension"
+Date "2018-09-07"
+Rev "1"
+Comp "QuadTouch"
+Comment1 "External Vref"
 Comment2 ""
 Comment3 ""
 Comment4 ""
