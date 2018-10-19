@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:PSU 4CH V1-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,173 +15,1437 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Custom_Library:LMP2022 U?
+L Custom_Library:LMP2022 U2
 U 1 1 5BBBB22A
-P 5400 4350
-F 0 "U?" H 5525 4275 60  0000 L CNN
-F 1 "LMP2022" H 5400 4200 60  0000 L CNN
-F 2 "" H 5400 4350 60  0000 C CNN
-F 3 "" H 5400 4350 60  0000 C CNN
-	1    5400 4350
+P 9650 5350
+F 0 "U2" H 9775 5275 60  0000 L CNN
+F 1 "LMP2022" H 9650 5200 60  0000 L CNN
+F 2 "Housings_SSOP:VSSOP-8_3.0x3.0mm_Pitch0.65mm" H 9650 5350 60  0001 C CNN
+F 3 "" H 9650 5350 60  0000 C CNN
+	1    9650 5350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Custom_Library:-0V5 #PWR?
+L Custom_Library:-0V5 #PWR8
 U 1 1 5BBBB2E0
-P 5400 4650
-F 0 "#PWR?" H 5400 4750 50  0001 C CNN
-F 1 "-0V5" H 5400 4823 50  0000 C CNN
-F 2 "" H 5400 4650 50  0000 C CNN
-F 3 "" H 5400 4650 50  0000 C CNN
-	1    5400 4650
+P 9650 5650
+F 0 "#PWR8" H 9650 5750 50  0001 C CNN
+F 1 "-0V5" H 9650 5800 50  0000 C CNN
+F 2 "" H 9650 5650 50  0000 C CNN
+F 3 "" H 9650 5650 50  0000 C CNN
+	1    9650 5650
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+5V #PWR0101
 U 1 1 5BBBB348
-P 5400 4050
-F 0 "#PWR0101" H 5400 3900 50  0001 C CNN
-F 1 "+5V" H 5415 4223 50  0000 C CNN
-F 2 "" H 5400 4050 50  0001 C CNN
-F 3 "" H 5400 4050 50  0001 C CNN
-	1    5400 4050
+P 9650 5050
+F 0 "#PWR0101" H 9650 4900 50  0001 C CNN
+F 1 "+5V" H 9650 5200 50  0000 C CNN
+F 2 "" H 9650 5050 50  0001 C CNN
+F 3 "" H 9650 5050 50  0001 C CNN
+	1    9650 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 5BBBB3EA
-P 4350 4850
-F 0 "#PWR0102" H 4350 4600 50  0001 C CNN
-F 1 "GND" H 4355 4677 50  0000 C CNN
-F 2 "" H 4350 4850 50  0001 C CNN
-F 3 "" H 4350 4850 50  0001 C CNN
-	1    4350 4850
+P 8600 5850
+F 0 "#PWR0102" H 8600 5600 50  0001 C CNN
+F 1 "GND" H 8600 5700 50  0000 C CNN
+F 2 "" H 8600 5850 50  0001 C CNN
+F 3 "" H 8600 5850 50  0001 C CNN
+	1    8600 5850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Custom_Library:Header_1X2 J?
-U 1 1 5BBBB500
-P 2550 3450
-F 0 "J?" H 2475 3700 60  0000 C CNN
-F 1 "Output" H 2575 3625 60  0000 C CNN
-F 2 "" H 2550 3450 60  0000 C CNN
-F 3 "" H 2550 3450 60  0000 C CNN
-	1    2550 3450
-	1    0    0    -1  
-$EndComp
-Connection ~ 4350 4250
+Connection ~ 8600 5250
 Wire Wire Line
-	4350 4250 4350 4350
+	8600 5250 8600 5350
 $Comp
-L Device:R R?
+L Device:R R14
 U 1 1 5BBBB551
-P 5950 4600
-F 0 "R?" H 6020 4691 50  0000 L CNN
-F 1 "100kΩ" H 6020 4600 50  0000 L CNN
-F 2 "" V 5880 4600 50  0001 C CNN
-F 3 "~" H 5950 4600 50  0001 C CNN
-F 4 "0.1%" H 6020 4509 50  0000 L CNN "Tolerance"
-F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB104V/P100KDBCT-ND/1466100" H 5950 4600 50  0001 C CNN "Link"
-	1    5950 4600
+P 10200 5600
+F 0 "R14" H 10250 5675 50  0000 L CNN
+F 1 "100kΩ" H 10250 5600 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10130 5600 50  0001 C CNN
+F 3 "~" H 10200 5600 50  0001 C CNN
+F 4 "0.1%" H 10250 5525 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB104V/P100KDBCT-ND/1466100" H 10200 5600 50  0001 C CNN "Link"
+	1    10200 5600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R15
 U 1 1 5BBBB5B1
-P 5950 5100
-F 0 "R?" H 6020 5191 50  0000 L CNN
-F 1 "1kΩ" H 6020 5100 50  0000 L CNN
-F 2 "" V 5880 5100 50  0001 C CNN
-F 3 "~" H 5950 5100 50  0001 C CNN
-F 4 "0.1%" H 6020 5009 50  0000 L CNN "Tolerance"
-F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB102V/P1.0KDBCT-ND/1466052" H 5950 5100 50  0001 C CNN "Link"
-	1    5950 5100
+P 10200 6100
+F 0 "R15" H 10250 6175 50  0000 L CNN
+F 1 "1kΩ" H 10250 6100 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 10130 6100 50  0001 C CNN
+F 3 "~" H 10200 6100 50  0001 C CNN
+F 4 "0.1%" H 10250 6025 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB102V/P1.0KDBCT-ND/1466052" H 10200 6100 50  0001 C CNN "Link"
+	1    10200 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5BBBB5E1
-P 5950 5250
-F 0 "#PWR0103" H 5950 5000 50  0001 C CNN
-F 1 "GND" H 5955 5077 50  0000 C CNN
-F 2 "" H 5950 5250 50  0001 C CNN
-F 3 "" H 5950 5250 50  0001 C CNN
-	1    5950 5250
+P 10200 6250
+F 0 "#PWR0103" H 10200 6000 50  0001 C CNN
+F 1 "GND" H 10200 6100 50  0000 C CNN
+F 2 "" H 10200 6250 50  0001 C CNN
+F 3 "" H 10200 6250 50  0001 C CNN
+	1    10200 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 4950 5950 4850
+	10200 5950 10200 5850
 Wire Wire Line
-	5950 4850 5000 4850
+	10200 5850 9250 5850
 Wire Wire Line
-	5000 4850 5000 4450
+	9250 5850 9250 5450
 Wire Wire Line
-	5000 4450 5100 4450
-Connection ~ 5950 4850
+	9250 5450 9350 5450
+Connection ~ 10200 5850
 Wire Wire Line
-	5950 4850 5950 4750
+	10200 5850 10200 5750
 Wire Wire Line
-	5950 4450 5950 4350
+	10200 5450 10200 5350
 Wire Wire Line
-	5950 4350 5700 4350
+	10200 5350 9950 5350
 Wire Wire Line
-	3850 4350 3850 4250
+	8100 5350 8100 5250
 Wire Wire Line
-	3850 4250 4350 4250
+	8100 5250 8600 5250
 Wire Wire Line
-	4350 4850 4350 4750
+	8600 5850 8600 5750
 Wire Wire Line
-	4350 4750 3850 4750
+	8600 5750 8100 5750
 Wire Wire Line
-	3850 4750 3850 4650
-Connection ~ 4350 4750
+	8100 5750 8100 5650
+Connection ~ 8600 5750
 Wire Wire Line
-	4350 4750 4350 4650
-Text Notes 5750 4350 0    50   ~ 0
+	8600 5750 8600 5650
+Text Notes 10250 5450 0    50   ~ 0
 Vout = 3.03V @ 5A
-Text Notes 4400 4250 0    50   ~ 0
+Text Notes 8650 5250 0    50   ~ 0
 Vin = 0.03V @ 5A
 Wire Wire Line
-	4350 4250 5100 4250
-Text Notes 5975 4875 0    50   ~ 0
+	8600 5250 9350 5250
+Text Notes 10225 5875 0    50   ~ 0
 Gain = 101
 $Comp
-L Device:R R?
+L Device:R R12
 U 1 1 5BBBBF2D
-P 3850 4500
-F 0 "R?" H 3920 4591 50  0000 L CNN
-F 1 "12mΩ" H 3920 4500 50  0000 L CNN
-F 2 "" V 3780 4500 50  0001 C CNN
-F 3 "~" H 3850 4500 50  0001 C CNN
-F 4 "1%" H 3920 4409 50  0000 L CNN "Tolerance"
-F 5 "https://www.digikey.sg/product-detail/en/susumu/KRL1220E-M-R012-F-T5/408-1545-1-ND/3737727" H 3850 4500 50  0001 C CNN "Link"
-	1    3850 4500
+P 8100 5500
+F 0 "R12" H 8150 5575 50  0000 L CNN
+F 1 "12mΩ" H 8150 5500 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8030 5500 50  0001 C CNN
+F 3 "~" H 8100 5500 50  0001 C CNN
+F 4 "1%" H 8150 5425 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/susumu/KRL1220E-M-R012-F-T5/408-1545-1-ND/3737727" H 8100 5500 50  0001 C CNN "Link"
+	1    8100 5500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R13
 U 1 1 5BBBBF9B
-P 4350 4500
-F 0 "R?" H 4420 4591 50  0000 L CNN
-F 1 "12mΩ" H 4420 4500 50  0000 L CNN
-F 2 "" V 4280 4500 50  0001 C CNN
-F 3 "~" H 4350 4500 50  0001 C CNN
-F 4 "1%" H 4420 4409 50  0000 L CNN "Tolerance"
-F 5 "https://www.digikey.sg/product-detail/en/susumu/KRL1220E-M-R012-F-T5/408-1545-1-ND/3737727" H 4350 4500 50  0001 C CNN "Link"
-	1    4350 4500
+P 8600 5500
+F 0 "R13" H 8650 5575 50  0000 L CNN
+F 1 "12mΩ" H 8650 5500 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8530 5500 50  0001 C CNN
+F 3 "~" H 8600 5500 50  0001 C CNN
+F 4 "1%" H 8650 5425 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/susumu/KRL1220E-M-R012-F-T5/408-1545-1-ND/3737727" H 8600 5500 50  0001 C CNN "Link"
+	1    8600 5500
 	1    0    0    -1  
 $EndComp
-Text Label 3250 3400 2    50   ~ 0
-Output-V+
-Text Label 3250 3500 2    50   ~ 0
+Text Label 9850 1850 0    50   ~ 0
+Output-Linear
+Text Label 9850 1950 0    50   ~ 0
 Output-GND
 Wire Wire Line
-	3250 3400 2650 3400
+	9850 1850 10450 1850
 Wire Wire Line
-	2650 3500 3250 3500
+	10450 2400 9850 2400
 Wire Wire Line
-	3350 4250 3850 4250
-Connection ~ 3850 4250
-Text Label 3350 4250 0    50   ~ 0
+	7600 5250 8100 5250
+Connection ~ 8100 5250
+Text Label 7600 5250 0    50   ~ 0
 Output-GND
+Wire Wire Line
+	9850 1950 10350 1950
+Wire Wire Line
+	10450 2500 9850 2500
+Text Label 9850 2500 0    50   ~ 0
+Vfb-
+Text Label 9850 2400 0    50   ~ 0
+Vfb+
+Text Label 850  5600 0    50   ~ 0
+Vfb+
+Wire Wire Line
+	1350 5100 1350 5200
+Wire Wire Line
+	1350 5500 1350 5600
+Wire Wire Line
+	1350 5600 850  5600
+$Comp
+L Device:R R7
+U 1 1 5BC03CB4
+P 1350 7150
+F 0 "R7" H 1400 7225 50  0000 L CNN
+F 1 "10Ω" H 1400 7150 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1280 7150 50  0001 C CNN
+F 3 "~" H 1350 7150 50  0001 C CNN
+F 4 "1%" H 1400 7075 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/stackpole-electronics-inc/RNCP0603FTD10R0/RNCP0603FTD10R0CT-ND/2240413" H 1350 7150 50  0001 C CNN "Link"
+	1    1350 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6900 1350 7000
+Wire Wire Line
+	1350 7300 1350 7400
+Wire Wire Line
+	1350 7400 850  7400
+Text Label 850  6900 0    50   ~ 0
+Vfb-
+Text Label 850  7400 0    50   ~ 0
+Output-GND
+$Comp
+L Device:R R5
+U 1 1 5BC04093
+P 1350 5850
+F 0 "R5" H 1400 5925 50  0000 L CNN
+F 1 "91kΩ" H 1400 5850 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1280 5850 50  0001 C CNN
+F 3 "~" H 1350 5850 50  0001 C CNN
+F 4 "0.1%" H 1400 5775 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERJ-PB3B9102V/P20196CT-ND/6214451" H 1350 5850 50  0001 C CNN "Link"
+	1    1350 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5BC040D1
+P 1350 6650
+F 0 "R6" H 1400 6725 50  0000 L CNN
+F 1 "10kΩ" H 1400 6650 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1280 6650 50  0001 C CNN
+F 3 "~" H 1350 6650 50  0001 C CNN
+F 4 "0.1%" H 1400 6575 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB103V/P10KDBCT-ND/1466076" H 1350 6650 50  0001 C CNN "Link"
+	1    1350 6650
+	1    0    0    -1  
+$EndComp
+Connection ~ 1350 6900
+$Comp
+L Custom_Library:LMP2022 U1
+U 1 1 5BC05170
+P 2150 6200
+F 0 "U1" H 2275 6125 60  0000 L CNN
+F 1 "LMP2022" H 2150 6050 60  0000 L CNN
+F 2 "Housings_SSOP:VSSOP-8_3.0x3.0mm_Pitch0.65mm" H 2150 6200 60  0001 C CNN
+F 3 "" H 2150 6200 60  0000 C CNN
+	1    2150 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Library:LMP2022 U1
+U 2 1 5BC05219
+P 2150 7000
+F 0 "U1" H 2275 6925 60  0000 L CNN
+F 1 "LMP2022" H 2150 6850 60  0000 L CNN
+F 2 "Housings_SSOP:VSSOP-8_3.0x3.0mm_Pitch0.65mm" H 2150 7000 60  0001 C CNN
+F 3 "" H 2150 7000 60  0000 C CNN
+	2    2150 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Library:-0V5 #PWR9
+U 1 1 5BC052D3
+P 2150 7300
+F 0 "#PWR9" H 2150 7400 50  0001 C CNN
+F 1 "-0V5" H 2150 7450 50  0000 C CNN
+F 2 "" H 2150 7300 50  0000 C CNN
+F 3 "" H 2150 7300 50  0000 C CNN
+	1    2150 7300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5BC052F6
+P 2150 5900
+F 0 "#PWR0104" H 2150 5750 50  0001 C CNN
+F 1 "+5V" H 2150 6050 50  0000 C CNN
+F 2 "" H 2150 5900 50  0001 C CNN
+F 3 "" H 2150 5900 50  0001 C CNN
+	1    2150 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 7100 1775 7100
+Wire Wire Line
+	2600 7000 2450 7000
+Wire Wire Line
+	1350 6800 1350 6900
+Wire Wire Line
+	1350 6500 1350 6100
+Wire Wire Line
+	1350 5700 1350 5600
+Connection ~ 1350 5600
+Wire Wire Line
+	850  6900 1350 6900
+Wire Wire Line
+	1350 6900 1850 6900
+Wire Wire Line
+	1850 6100 1350 6100
+Connection ~ 1350 6100
+Wire Wire Line
+	1350 6100 1350 6000
+Wire Wire Line
+	1850 6300 1750 6300
+Wire Wire Line
+	1750 6300 1750 6550
+Wire Wire Line
+	1750 6550 2600 6550
+Wire Wire Line
+	2600 6550 2600 6200
+Wire Wire Line
+	2600 6200 2450 6200
+$Comp
+L Device:R R10
+U 1 1 5BC09FC0
+P 2850 7000
+F 0 "R10" V 2775 7000 50  0000 C CNN
+F 1 "1kΩ" V 2850 7000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2780 7000 50  0001 C CNN
+F 3 "~" H 2850 7000 50  0001 C CNN
+F 4 "0.1%" V 2925 7000 50  0000 C CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB102V/P1.0KDBCT-ND/1466052" H 2850 7000 50  0001 C CNN "Link"
+	1    2850 7000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5BC0A00A
+P 2850 6200
+F 0 "R8" V 2775 6200 50  0000 C CNN
+F 1 "1kΩ" V 2850 6200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2780 6200 50  0001 C CNN
+F 3 "~" H 2850 6200 50  0001 C CNN
+F 4 "0.1%" V 2925 6200 50  0000 C CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB102V/P1.0KDBCT-ND/1466052" H 2850 6200 50  0001 C CNN "Link"
+	1    2850 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1775 7550 2600 7550
+Wire Wire Line
+	1775 7100 1775 7550
+Wire Wire Line
+	2600 7000 2600 7550
+$Comp
+L Device:R R9
+U 1 1 5BC0A94D
+P 3100 6450
+F 0 "R9" H 3150 6525 50  0000 L CNN
+F 1 "1kΩ" H 3150 6450 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3030 6450 50  0001 C CNN
+F 3 "~" H 3100 6450 50  0001 C CNN
+F 4 "0.1%" H 3150 6375 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB102V/P1.0KDBCT-ND/1466052" H 3100 6450 50  0001 C CNN "Link"
+	1    3100 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Library:LMP2022 U2
+U 2 1 5BC0AA66
+P 3800 6600
+F 0 "U2" H 3925 6525 60  0000 L CNN
+F 1 "LMP2022" H 3800 6450 60  0000 L CNN
+F 2 "Housings_SSOP:VSSOP-8_3.0x3.0mm_Pitch0.65mm" H 3800 6600 60  0001 C CNN
+F 3 "" H 3800 6600 60  0000 C CNN
+	2    3800 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6200 3100 6200
+Wire Wire Line
+	3400 6200 3400 6500
+Wire Wire Line
+	3400 6500 3500 6500
+$Comp
+L Device:R R11
+U 1 1 5BC0B490
+P 4000 7000
+F 0 "R11" V 3925 7000 50  0000 C CNN
+F 1 "1kΩ" V 4000 7000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3930 7000 50  0001 C CNN
+F 3 "~" H 4000 7000 50  0001 C CNN
+F 4 "0.1%" V 4075 7000 50  0000 C CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB102V/P1.0KDBCT-ND/1466052" H 4000 7000 50  0001 C CNN "Link"
+	1    4000 7000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 6700 3400 6700
+Wire Wire Line
+	3400 6700 3400 7000
+Connection ~ 3400 7000
+Wire Wire Line
+	3400 7000 3000 7000
+Wire Wire Line
+	2600 7000 2700 7000
+Connection ~ 2600 7000
+Wire Wire Line
+	4250 7000 4250 6600
+Wire Wire Line
+	4250 6600 4100 6600
+Wire Wire Line
+	2700 6200 2600 6200
+Connection ~ 2600 6200
+Text Notes 4300 6800 0    50   ~ 0
+Vout = 2.98029V @ 30V Output[Feedback point](with feedback)
+Text Notes 4300 6700 0    50   ~ 0
+Vout = 2.97029V @ 30.00587V Output (No FB)
+$Comp
+L Custom_Library:LM2678T-ADJ U4
+U 1 1 5BC13C8B
+P 3450 2600
+F 0 "U4" H 3450 3000 60  0000 C CNN
+F 1 "LM2678SX-ADJ" H 3450 2900 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-7_TabPin4" H 3450 2800 60  0001 C CNN
+F 3 "" H 3450 2800 60  0000 C CNN
+F 4 "https://www.digikey.sg/product-detail/en/texas-instruments/LM2678SX-ADJ-NOPB/LM2678SX-ADJ-NOPBCT-ND/3526906" H 0   0   50  0001 C CNN "Link"
+	1    3450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C11
+U 1 1 5BC13D14
+P 4150 2400
+F 0 "C11" V 4025 2400 50  0000 C CNN
+F 1 "10nF" V 4275 2400 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4188 2250 50  0001 C CNN
+F 3 "~" H 4150 2400 50  0001 C CNN
+	1    4150 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky D6
+U 1 1 5BC13E38
+P 4500 2850
+F 0 "D6" V 4375 2850 50  0000 L CNN
+F 1 "15SQ045" V 4600 2850 50  0000 L CNN
+F 2 "Diodes_ThroughHole:D_P600_R-6_P20.00mm_Horizontal" H 4500 2850 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/15SQ%20SERIES%20N0129%20REV.C.pdf" H 4500 2850 50  0001 C CNN
+F 4 "https://www.digikey.sg/product-detail/en/smc-diode-solutions/15SQ045TR/1655-1354-1-ND/6022799" H 0   0   50  0001 C CNN "Link"
+	1    4500 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5BC13F30
+P 4750 2600
+F 0 "L1" V 4900 2600 50  0000 C CNN
+F 1 "22uH" V 4825 2600 50  0000 C CNN
+F 2 "Custom Github:Inductor-22uH-5.4A" H 4750 2600 50  0001 C CNN
+F 3 "~" H 4750 2600 50  0001 C CNN
+	1    4750 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP C12
+U 1 1 5BC14EB4
+P 5150 2850
+F 0 "C12" H 5150 2925 50  0000 L CNN
+F 1 "22uF" H 5150 2775 50  0000 L CNN
+F 2 "Custom Github:Cap_Pol_Radial_D8_P2" H 5188 2700 50  0001 C CNN
+F 3 "~" H 5150 2850 50  0001 C CNN
+	1    5150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2700 5150 2600
+Wire Wire Line
+	5150 2600 4900 2600
+Wire Wire Line
+	4600 2600 4500 2600
+Wire Wire Line
+	4500 2700 4500 2600
+Connection ~ 4500 2600
+Wire Wire Line
+	4500 2600 4000 2600
+$Comp
+L power:GND #PWR0105
+U 1 1 5BC17EBD
+P 4500 3000
+F 0 "#PWR0105" H 4500 2750 50  0001 C CNN
+F 1 "GND" H 4500 2850 50  0000 C CNN
+F 2 "" H 4500 3000 50  0001 C CNN
+F 3 "" H 4500 3000 50  0001 C CNN
+	1    4500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5BC17F20
+P 5150 3000
+F 0 "#PWR0106" H 5150 2750 50  0001 C CNN
+F 1 "GND" H 5150 2850 50  0000 C CNN
+F 2 "" H 5150 3000 50  0001 C CNN
+F 3 "" H 5150 3000 50  0001 C CNN
+	1    5150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5BC17F83
+P 2900 2800
+F 0 "#PWR0107" H 2900 2550 50  0001 C CNN
+F 1 "GND" H 2900 2650 50  0000 C CNN
+F 2 "" H 2900 2800 50  0001 C CNN
+F 3 "" H 2900 2800 50  0001 C CNN
+	1    2900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C10
+U 1 1 5BC17FC1
+P 2550 2650
+F 0 "C10" H 2550 2725 50  0000 L CNN
+F 1 "22uF" H 2550 2575 50  0000 L CNN
+F 2 "Custom Github:Cap_Pol_Radial_D8_P2" H 2588 2500 50  0001 C CNN
+F 3 "~" H 2550 2650 50  0001 C CNN
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C9
+U 1 1 5BC18055
+P 2150 2650
+F 0 "C9" H 2150 2725 50  0000 L CNN
+F 1 "22uF" H 2150 2575 50  0000 L CNN
+F 2 "Custom Github:Cap_Pol_Radial_D8_P2" H 2188 2500 50  0001 C CNN
+F 3 "~" H 2150 2650 50  0001 C CNN
+	1    2150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5BC19371
+P 1750 2650
+F 0 "C8" H 1750 2725 50  0000 L CNN
+F 1 "470nF" H 1750 2575 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1788 2500 50  0001 C CNN
+F 3 "~" H 1750 2650 50  0001 C CNN
+	1    1750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2400 1750 2500
+Wire Wire Line
+	1750 2400 2150 2400
+$Comp
+L power:GND #PWR0108
+U 1 1 5BC1CB33
+P 1750 2800
+F 0 "#PWR0108" H 1750 2550 50  0001 C CNN
+F 1 "GND" H 1750 2650 50  0000 C CNN
+F 2 "" H 1750 2800 50  0001 C CNN
+F 3 "" H 1750 2800 50  0001 C CNN
+	1    1750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5BC1CB87
+P 2150 2800
+F 0 "#PWR0109" H 2150 2550 50  0001 C CNN
+F 1 "GND" H 2150 2650 50  0000 C CNN
+F 2 "" H 2150 2800 50  0001 C CNN
+F 3 "" H 2150 2800 50  0001 C CNN
+	1    2150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5BC1CBDB
+P 2550 2800
+F 0 "#PWR0110" H 2550 2550 50  0001 C CNN
+F 1 "GND" H 2550 2650 50  0000 C CNN
+F 2 "" H 2550 2800 50  0001 C CNN
+F 3 "" H 2550 2800 50  0001 C CNN
+	1    2550 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2500 2550 2400
+Connection ~ 2550 2400
+Wire Wire Line
+	2550 2400 2900 2400
+Wire Wire Line
+	2150 2400 2150 2500
+Connection ~ 2150 2400
+Wire Wire Line
+	2150 2400 2550 2400
+Wire Wire Line
+	4300 2400 4500 2400
+Wire Wire Line
+	4500 2400 4500 2600
+$Comp
+L Custom_Library:LMP2022 U3
+U 1 1 5BC207DC
+P 7200 3150
+F 0 "U3" H 7325 3225 60  0000 L CNN
+F 1 "LMP2022" H 7200 3300 60  0000 L CNN
+F 2 "Housings_SSOP:VSSOP-8_3.0x3.0mm_Pitch0.65mm" H 7200 3150 60  0001 C CNN
+F 3 "" H 7200 3150 60  0000 C CNN
+	1    7200 3150
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BC20A8E
+P 6150 2850
+F 0 "R1" H 6200 2925 50  0000 L CNN
+F 1 "91kΩ" H 6200 2850 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6080 2850 50  0001 C CNN
+F 3 "~" H 6150 2850 50  0001 C CNN
+F 4 "0.1%" H 6200 2775 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERJ-PB3B9102V/P20196CT-ND/6214451" H 6150 2850 50  0001 C CNN "Link"
+	1    6150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BC20C9B
+P 6150 3250
+F 0 "R2" H 6200 3325 50  0000 L CNN
+F 1 "10kΩ" H 6200 3250 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6080 3250 50  0001 C CNN
+F 3 "~" H 6150 3250 50  0001 C CNN
+F 4 "0.1%" H 6200 3175 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB103V/P10KDBCT-ND/1466076" H 6150 3250 50  0001 C CNN "Link"
+	1    6150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5BC20EA2
+P 6150 3400
+F 0 "#PWR0111" H 6150 3150 50  0001 C CNN
+F 1 "GND" H 6150 3250 50  0000 C CNN
+F 2 "" H 6150 3400 50  0001 C CNN
+F 3 "" H 6150 3400 50  0001 C CNN
+	1    6150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 5BC20F8A
+P 7200 3450
+F 0 "#PWR0112" H 7200 3300 50  0001 C CNN
+F 1 "+5V" H 7200 3600 50  0000 C CNN
+F 2 "" H 7200 3450 50  0001 C CNN
+F 3 "" H 7200 3450 50  0001 C CNN
+	1    7200 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Custom_Library:-0V5 #PWR5
+U 1 1 5BC20FF2
+P 7200 2850
+F 0 "#PWR5" H 7200 2950 50  0001 C CNN
+F 1 "-0V5" H 7200 3000 50  0000 C CNN
+F 2 "" H 7200 2850 50  0000 C CNN
+F 3 "" H 7200 2850 50  0000 C CNN
+	1    7200 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3050 6150 3000
+Wire Wire Line
+	6150 3100 6150 3050
+Connection ~ 6150 3050
+Wire Wire Line
+	6150 2700 6150 2600
+Wire Wire Line
+	6150 3050 6900 3050
+Text Label 6500 3250 0    50   ~ 0
+DAC_BUCK
+Text Label 6650 2600 2    50   ~ 0
+Output-Buck
+Wire Wire Line
+	6650 2600 6150 2600
+Connection ~ 6150 2600
+Wire Wire Line
+	1750 2400 1250 2400
+Connection ~ 1750 2400
+Text Label 1250 2400 0    50   ~ 0
+Input-V+
+$Comp
+L power:GND #PWR0113
+U 1 1 5BC2CD6A
+P 10350 2050
+F 0 "#PWR0113" H 10350 1800 50  0001 C CNN
+F 1 "GND" H 10350 1900 50  0000 C CNN
+F 2 "" H 10350 2050 50  0001 C CNN
+F 3 "" H 10350 2050 50  0001 C CNN
+	1    10350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 2050 10350 1950
+Connection ~ 10350 1950
+Wire Wire Line
+	10350 1950 10450 1950
+Text Label 4400 2800 2    50   ~ 0
+Vfb-Buck
+$Comp
+L Custom_Library:-0V5 #PWR4
+U 1 1 5BC32993
+P 1250 1700
+F 0 "#PWR4" H 1250 1800 50  0001 C CNN
+F 1 "-0V5" H 1250 1850 50  0000 C CNN
+F 2 "" H 1250 1700 50  0000 C CNN
+F 3 "" H 1250 1700 50  0000 C CNN
+	1    1250 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5BC36E62
+P 1500 1700
+F 0 "#PWR0114" H 1500 1450 50  0001 C CNN
+F 1 "GND" H 1500 1550 50  0000 C CNN
+F 2 "" H 1500 1700 50  0001 C CNN
+F 3 "" H 1500 1700 50  0001 C CNN
+	1    1500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0115
+U 1 1 5BC38CE8
+P 1200 800
+F 0 "#PWR0115" H 1200 650 50  0001 C CNN
+F 1 "+5V" H 1215 973 50  0000 C CNN
+F 2 "" H 1200 800 50  0001 C CNN
+F 3 "" H 1200 800 50  0001 C CNN
+	1    1200 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 800  1200 900 
+Wire Wire Line
+	1200 900  1000 900 
+Text Label 1500 1000 2    50   ~ 0
+Input-V+
+Text Label 4750 6600 2    50   ~ 0
+V-ADC
+Wire Wire Line
+	4750 6600 4250 6600
+Connection ~ 4250 6600
+Text Label 10700 5350 2    50   ~ 0
+I-ADC
+Wire Wire Line
+	10700 5350 10200 5350
+Connection ~ 10200 5350
+Text Label 1500 1100 2    50   ~ 0
+V-ADC
+Text Label 1500 1200 2    50   ~ 0
+I-ADC
+Wire Wire Line
+	1500 1300 1000 1300
+Wire Wire Line
+	1000 1200 1500 1200
+Wire Wire Line
+	1500 1100 1000 1100
+Wire Wire Line
+	1000 1000 1500 1000
+$Comp
+L power:GND #PWR0116
+U 1 1 5BC4911E
+P 3100 6600
+F 0 "#PWR0116" H 3100 6350 50  0001 C CNN
+F 1 "GND" H 3100 6450 50  0000 C CNN
+F 2 "" H 3100 6600 50  0001 C CNN
+F 3 "" H 3100 6600 50  0001 C CNN
+	1    3100 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6300 3100 6200
+Connection ~ 3100 6200
+Wire Wire Line
+	3100 6200 3400 6200
+$Comp
+L Device:R R4
+U 1 1 5BC4C577
+P 1350 5350
+F 0 "R4" H 1400 5425 50  0000 L CNN
+F 1 "10Ω" H 1400 5350 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1280 5350 50  0001 C CNN
+F 3 "~" H 1350 5350 50  0001 C CNN
+F 4 "1%" H 1400 5275 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/stackpole-electronics-inc/RNCP0603FTD10R0/RNCP0603FTD10R0CT-ND/2240413" H 1350 5350 50  0001 C CNN "Link"
+	1    1350 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5BC4D31D
+P 2750 4300
+F 0 "R16" H 2800 4375 50  0000 L CNN
+F 1 "91kΩ" H 2800 4300 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2680 4300 50  0001 C CNN
+F 3 "~" H 2750 4300 50  0001 C CNN
+F 4 "0.1%" H 2800 4225 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERJ-PB3B9102V/P20196CT-ND/6214451" H 2750 4300 50  0001 C CNN "Link"
+	1    2750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5BC4D325
+P 2750 4700
+F 0 "R17" H 2800 4775 50  0000 L CNN
+F 1 "10kΩ" H 2800 4700 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2680 4700 50  0001 C CNN
+F 3 "~" H 2750 4700 50  0001 C CNN
+F 4 "0.1%" H 2800 4625 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERA-3AEB103V/P10KDBCT-ND/1466076" H 2750 4700 50  0001 C CNN "Link"
+	1    2750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5BC4D32B
+P 2750 4850
+F 0 "#PWR0117" H 2750 4600 50  0001 C CNN
+F 1 "GND" H 2750 4700 50  0000 C CNN
+F 2 "" H 2750 4850 50  0001 C CNN
+F 3 "" H 2750 4850 50  0001 C CNN
+	1    2750 4850
+	1    0    0    -1  
+$EndComp
+Text Label 2650 4000 2    50   ~ 0
+Vfb-Linear
+Wire Wire Line
+	4000 2800 4400 2800
+Text Label 7900 3150 2    50   ~ 0
+Vfb-Buck
+Wire Wire Line
+	7500 3150 7900 3150
+$Comp
+L Custom_Library:Header_1X9 J1
+U 1 1 5BC5B222
+P 900 1300
+F 0 "J1" H 825 1875 50  0000 C CNN
+F 1 "MCU I/O" H 950 1800 50  0000 C CNN
+F 2 "Custom Github:Pin_Header_Straight_1x09" H 900 1450 50  0001 C CNN
+F 3 "" H 900 1450 50  0000 C CNN
+	1    900  1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3250 6900 3250
+Wire Wire Line
+	1000 1400 1500 1400
+$Comp
+L Custom_Library:-2V8 #PWR3
+U 1 1 5BC6A655
+P 1000 1700
+F 0 "#PWR3" H 1000 1800 50  0001 C CNN
+F 1 "-2V8" H 1000 1850 50  0000 C CNN
+F 2 "" H 1000 1700 50  0000 C CNN
+F 3 "" H 1000 1700 50  0000 C CNN
+	1    1000 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 1600 1250 1600
+Wire Wire Line
+	1250 1600 1250 1700
+Wire Wire Line
+	1500 1700 1500 1500
+Wire Wire Line
+	1500 1500 1000 1500
+Text Label 1500 1300 2    50   ~ 0
+DAC_BUCK
+Text Label 1500 1400 2    50   ~ 0
+DAC_LINEAR
+Text Label 3050 4700 0    50   ~ 0
+DAC_LINEAR
+$Comp
+L Custom_Library:LMS1585A U5
+U 1 1 5BC7AE3D
+P 1750 3900
+F 0 "U5" H 1750 4075 50  0000 C CNN
+F 1 "LMS1585A" H 1750 4000 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:TO-263-3_TabPin2" H 1750 3900 50  0001 C CNN
+F 3 "" H 1750 3900 50  0001 C CNN
+F 4 "https://www.digikey.sg/product-detail/en/texas-instruments/LMS1585ACSX-ADJ-NOPB/LMS1585ACSX-ADJ-NOPBCT-ND/3527075" H -2000 750 50  0001 C CNN "Link"
+	1    1750 3900
+	1    0    0    -1  
+$EndComp
+Text Label 850  3900 0    50   ~ 0
+Output-Buck
+Wire Wire Line
+	850  3900 1350 3900
+Wire Wire Line
+	2650 4000 2150 4000
+Wire Wire Line
+	2750 3900 2150 3900
+$Comp
+L Device:R R18
+U 1 1 5BC984ED
+P 4350 4600
+F 0 "R18" V 4275 4600 50  0000 C CNN
+F 1 "75kΩ" V 4350 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4280 4600 50  0001 C CNN
+F 3 "~" H 4350 4600 50  0001 C CNN
+F 4 "1%" V 4425 4600 50  0000 C CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/stackpole-electronics-inc/RMCF0603FT75K0/RMCF0603FT75K0CT-ND/1943111" H 4350 4600 50  0001 C CNN "Link"
+	1    4350 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BC98890
+P 6300 4150
+F 0 "R3" H 6350 4225 50  0000 L CNN
+F 1 "680Ω" H 6350 4150 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6230 4150 50  0001 C CNN
+F 3 "~" H 6300 4150 50  0001 C CNN
+F 4 "1%" H 6350 4075 50  0000 L CNN "Tolerance"
+F 5 "https://www.digikey.sg/product-detail/en/panasonic-electronic-components/ERJ-3EKF6800V/P680HCT-ND/1746801" H 6300 4150 50  0001 C CNN "Link"
+	1    6300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q1
+U 1 1 5BC98AC3
+P 6200 4600
+F 0 "Q1" H 6391 4646 50  0000 L CNN
+F 1 "FJV1845" H 6391 4555 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6400 4700 50  0001 C CNN
+F 3 "https://www.fairchildsemi.com/datasheets/FJ/FJV1845.pdf" H 6200 4600 50  0001 C CNN
+F 4 "https://www.digikey.sg/product-detail/en/on-semiconductor/FJV1845PMTF/FJV1845PMTFCT-ND/4213590" H -1100 750 50  0001 C CNN "Link"
+	1    6200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Library:-2V8 #PWR7
+U 1 1 5BC98C34
+P 6300 4800
+F 0 "#PWR7" H 6300 4900 50  0001 C CNN
+F 1 "-2V8" H 6300 4950 50  0000 C CNN
+F 2 "" H 6300 4800 50  0000 C CNN
+F 3 "" H 6300 4800 50  0000 C CNN
+	1    6300 4800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6300 3900 6300 4000
+Text Label 7050 3900 2    50   ~ 0
+Output-Linear
+Wire Wire Line
+	2750 3900 2750 4150
+Text Label 5800 4350 0    50   ~ 0
+Vfb-Linear
+Wire Wire Line
+	5800 4350 6300 4350
+Wire Wire Line
+	6300 4350 6300 4400
+Wire Wire Line
+	6300 4350 6300 4300
+Connection ~ 6300 4350
+$Comp
+L Device:D D1
+U 1 1 5BCB3820
+P 4650 4600
+F 0 "D1" H 4650 4525 50  0000 C CNN
+F 1 "1N914" H 4650 4700 50  0000 C CNN
+F 2 "Custom Github:1N4148" H 4650 4600 50  0001 C CNN
+F 3 "~" H 4650 4600 50  0001 C CNN
+	1    4650 4600
+	-1   0    0    1   
+$EndComp
+Connection ~ 6300 3900
+Wire Wire Line
+	2750 3900 6300 3900
+Connection ~ 2750 3900
+Wire Wire Line
+	4150 7000 4250 7000
+Wire Wire Line
+	3400 7000 3850 7000
+$Comp
+L Device:D D2
+U 1 1 5BCD4BD9
+P 4950 4600
+F 0 "D2" H 4950 4525 50  0000 C CNN
+F 1 "1N914" H 4950 4700 50  0000 C CNN
+F 2 "Custom Github:1N4148" H 4950 4600 50  0001 C CNN
+F 3 "~" H 4950 4600 50  0001 C CNN
+	1    4950 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5BCD4C6F
+P 5250 4600
+F 0 "D3" H 5250 4525 50  0000 C CNN
+F 1 "1N914" H 5250 4700 50  0000 C CNN
+F 2 "Custom Github:1N4148" H 5250 4600 50  0001 C CNN
+F 3 "~" H 5250 4600 50  0001 C CNN
+	1    5250 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5BCD4C75
+P 5550 4600
+F 0 "D4" H 5550 4525 50  0000 C CNN
+F 1 "1N914" H 5550 4700 50  0000 C CNN
+F 2 "Custom Github:1N4148" H 5550 4600 50  0001 C CNN
+F 3 "~" H 5550 4600 50  0001 C CNN
+	1    5550 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D5
+U 1 1 5BCD832A
+P 5850 4600
+F 0 "D5" H 5850 4525 50  0000 C CNN
+F 1 "1N914" H 5850 4700 50  0000 C CNN
+F 2 "Custom Github:1N4148" H 5850 4600 50  0001 C CNN
+F 3 "~" H 5850 4600 50  0001 C CNN
+	1    5850 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C13
+U 1 1 5BCDC5A3
+P 5400 2850
+F 0 "C13" H 5400 2925 50  0000 L CNN
+F 1 "22uF" H 5400 2775 50  0000 L CNN
+F 2 "Custom Github:Cap_Pol_Radial_D8_P2" H 5438 2700 50  0001 C CNN
+F 3 "~" H 5400 2850 50  0001 C CNN
+	1    5400 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5BCDC605
+P 5400 3000
+F 0 "#PWR0118" H 5400 2750 50  0001 C CNN
+F 1 "GND" H 5400 2850 50  0000 C CNN
+F 2 "" H 5400 3000 50  0001 C CNN
+F 3 "" H 5400 3000 50  0001 C CNN
+	1    5400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2600 5400 2600
+Connection ~ 5150 2600
+Wire Wire Line
+	5400 2600 5400 2700
+Connection ~ 5400 2600
+Wire Wire Line
+	5400 2600 5650 2600
+$Comp
+L Device:CP C15
+U 1 1 5BCE377B
+P 6800 4150
+F 0 "C15" H 6800 4225 50  0000 L CNN
+F 1 "22uF" H 6800 4075 50  0000 L CNN
+F 2 "Custom Github:Cap_Pol_Radial_D8_P2" H 6838 4000 50  0001 C CNN
+F 3 "~" H 6800 4150 50  0001 C CNN
+	1    6800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5BCE3781
+P 6800 4300
+F 0 "#PWR0119" H 6800 4050 50  0001 C CNN
+F 1 "GND" H 6800 4150 50  0000 C CNN
+F 2 "" H 6800 4300 50  0001 C CNN
+F 3 "" H 6800 4300 50  0001 C CNN
+	1    6800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3900 6800 3900
+Wire Wire Line
+	6800 3900 6800 4000
+Wire Wire Line
+	7050 3900 6800 3900
+Connection ~ 6800 3900
+Text Notes 1500 1000 0    50   ~ 0
+(40V in MAX)
+Text Notes 1500 1300 0    50   ~ 0
+(0V - 3.3V)
+Text Notes 1500 1400 0    50   ~ 0
+(0V - 3.3V)
+Text Notes 1500 1100 0    50   ~ 0
+(0V - 3.3V)
+Text Notes 1500 1200 0    50   ~ 0
+(0V - 3.3V)
+Text Notes 4950 4350 0    50   ~ 0
+(Vout - ADJ = 1.25V)
+$Comp
+L Custom_Library:LMP2022 U3
+U 2 1 5BD11A35
+P 3800 4600
+F 0 "U3" H 3925 4675 60  0000 L CNN
+F 1 "LMP2022" H 3800 4750 60  0000 L CNN
+F 2 "Housings_SSOP:VSSOP-8_3.0x3.0mm_Pitch0.65mm" H 3800 4600 60  0001 C CNN
+F 3 "" H 3800 4600 60  0000 C CNN
+	2    3800 4600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0120
+U 1 1 5BD11A3B
+P 3800 4900
+F 0 "#PWR0120" H 3800 4750 50  0001 C CNN
+F 1 "+5V" H 3800 5050 50  0000 C CNN
+F 2 "" H 3800 4900 50  0001 C CNN
+F 3 "" H 3800 4900 50  0001 C CNN
+	1    3800 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Custom_Library:-0V5 #PWR6
+U 1 1 5BD11A41
+P 3800 4300
+F 0 "#PWR6" H 3800 4400 50  0001 C CNN
+F 1 "-0V5" H 3800 4450 50  0000 C CNN
+F 2 "" H 3800 4300 50  0000 C CNN
+F 3 "" H 3800 4300 50  0000 C CNN
+	1    3800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4450 2750 4500
+Wire Wire Line
+	3500 4700 3050 4700
+Wire Wire Line
+	3500 4500 2750 4500
+Connection ~ 2750 4500
+Wire Wire Line
+	2750 4500 2750 4550
+Wire Wire Line
+	4100 4600 4200 4600
+$Comp
+L power:+5V #PWR0121
+U 1 1 5BC5CE5D
+P 2700 800
+F 0 "#PWR0121" H 2700 650 50  0001 C CNN
+F 1 "+5V" H 2715 973 50  0000 C CNN
+F 2 "" H 2700 800 50  0001 C CNN
+F 3 "" H 2700 800 50  0001 C CNN
+	1    2700 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BC5CEBE
+P 2700 1150
+F 0 "C1" H 2700 1225 50  0000 L CNN
+F 1 "470nF" H 2700 1075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2738 1000 50  0001 C CNN
+F 3 "~" H 2700 1150 50  0001 C CNN
+	1    2700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5BC5CF82
+P 2950 1150
+F 0 "C2" H 2950 1225 50  0000 L CNN
+F 1 "470nF" H 2950 1075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2988 1000 50  0001 C CNN
+F 3 "~" H 2950 1150 50  0001 C CNN
+	1    2950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5BC5D1E9
+P 3200 1150
+F 0 "C3" H 3200 1225 50  0000 L CNN
+F 1 "470nF" H 3200 1075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3238 1000 50  0001 C CNN
+F 3 "~" H 3200 1150 50  0001 C CNN
+	1    3200 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5BC5D4E3
+P 2700 1500
+F 0 "#PWR0122" H 2700 1250 50  0001 C CNN
+F 1 "GND" H 2700 1350 50  0000 C CNN
+F 2 "" H 2700 1500 50  0001 C CNN
+F 3 "" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 5BC6123F
+P 3700 800
+F 0 "#PWR0123" H 3700 550 50  0001 C CNN
+F 1 "GND" H 3700 650 50  0000 C CNN
+F 2 "" H 3700 800 50  0001 C CNN
+F 3 "" H 3700 800 50  0001 C CNN
+	1    3700 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Custom_Library:-0V5 #PWR1
+U 1 1 5BC6130E
+P 3700 1500
+F 0 "#PWR1" H 3700 1600 50  0001 C CNN
+F 1 "-0V5" H 3700 1650 50  0000 C CNN
+F 2 "" H 3700 1500 50  0000 C CNN
+F 3 "" H 3700 1500 50  0000 C CNN
+	1    3700 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5BC614AD
+P 4950 1150
+F 0 "C7" H 4950 1225 50  0000 L CNN
+F 1 "470nF" H 4950 1075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4988 1000 50  0001 C CNN
+F 3 "~" H 4950 1150 50  0001 C CNN
+	1    4950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 5BC614B3
+P 4950 800
+F 0 "#PWR0124" H 4950 550 50  0001 C CNN
+F 1 "GND" H 4950 650 50  0000 C CNN
+F 2 "" H 4950 800 50  0001 C CNN
+F 3 "" H 4950 800 50  0001 C CNN
+	1    4950 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Custom_Library:-2V8 #PWR2
+U 1 1 5BC65274
+P 4950 1500
+F 0 "#PWR2" H 4950 1600 50  0001 C CNN
+F 1 "-2V8" H 4950 1650 50  0000 C CNN
+F 2 "" H 4950 1500 50  0000 C CNN
+F 3 "" H 4950 1500 50  0000 C CNN
+	1    4950 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 800  2700 900 
+Wire Wire Line
+	2700 1300 2700 1400
+Wire Wire Line
+	3200 1300 3200 1400
+Wire Wire Line
+	3200 1400 2950 1400
+Connection ~ 2700 1400
+Wire Wire Line
+	2700 1400 2700 1500
+Wire Wire Line
+	2950 1400 2950 1300
+Connection ~ 2950 1400
+Wire Wire Line
+	2950 1400 2700 1400
+Wire Wire Line
+	2950 1000 2950 900 
+Wire Wire Line
+	2950 900  3200 900 
+Wire Wire Line
+	3200 900  3200 1000
+Wire Wire Line
+	2950 900  2700 900 
+Connection ~ 2950 900 
+Connection ~ 2700 900 
+Wire Wire Line
+	2700 900  2700 1000
+$Comp
+L Device:C C4
+U 1 1 5BCB3355
+P 3700 1150
+F 0 "C4" H 3700 1225 50  0000 L CNN
+F 1 "470nF" H 3700 1075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3738 1000 50  0001 C CNN
+F 3 "~" H 3700 1150 50  0001 C CNN
+	1    3700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5BCB335B
+P 3950 1150
+F 0 "C5" H 3950 1225 50  0000 L CNN
+F 1 "470nF" H 3950 1075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3988 1000 50  0001 C CNN
+F 3 "~" H 3950 1150 50  0001 C CNN
+	1    3950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5BCB3361
+P 4200 1150
+F 0 "C6" H 4200 1225 50  0000 L CNN
+F 1 "470nF" H 4200 1075 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4238 1000 50  0001 C CNN
+F 3 "~" H 4200 1150 50  0001 C CNN
+	1    4200 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 800  3700 900 
+Wire Wire Line
+	3700 1300 3700 1400
+Wire Wire Line
+	4200 1300 4200 1400
+Wire Wire Line
+	4200 1400 3950 1400
+Connection ~ 3700 1400
+Wire Wire Line
+	3700 1400 3700 1500
+Wire Wire Line
+	3950 1400 3950 1300
+Connection ~ 3950 1400
+Wire Wire Line
+	3950 1400 3700 1400
+Wire Wire Line
+	3950 1000 3950 900 
+Wire Wire Line
+	3950 900  4200 900 
+Wire Wire Line
+	4200 900  4200 1000
+Wire Wire Line
+	3950 900  3700 900 
+Connection ~ 3950 900 
+Connection ~ 3700 900 
+Wire Wire Line
+	3700 900  3700 1000
+Wire Wire Line
+	4950 800  4950 1000
+Wire Wire Line
+	4950 1300 4950 1500
+$Comp
+L Device:C C14
+U 1 1 5BCC4509
+P 5650 2850
+F 0 "C14" H 5650 2925 50  0000 L CNN
+F 1 "470nF" H 5650 2775 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 5688 2700 50  0001 C CNN
+F 3 "~" H 5650 2850 50  0001 C CNN
+	1    5650 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5BCC46AC
+P 5650 3000
+F 0 "#PWR0125" H 5650 2750 50  0001 C CNN
+F 1 "GND" H 5650 2850 50  0000 C CNN
+F 2 "" H 5650 3000 50  0001 C CNN
+F 3 "" H 5650 3000 50  0001 C CNN
+	1    5650 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2700 5650 2600
+Connection ~ 5650 2600
+Wire Wire Line
+	5650 2600 6150 2600
+$Comp
+L Custom_Library:Header_1X2 J2
+U 1 1 5BCCCF51
+P 10550 1900
+F 0 "J2" H 10422 1958 60  0000 R CNN
+F 1 "PSU Out" H 10422 1852 60  0000 R CNN
+F 2 "Custom Github:Terminal_Block-5mm" H 10550 1900 60  0001 C CNN
+F 3 "" H 10550 1900 60  0000 C CNN
+	1    10550 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Custom_Library:Header_1X2 J3
+U 1 1 5BCCD02C
+P 10550 2450
+F 0 "J3" H 10422 2508 60  0000 R CNN
+F 1 "PSU FB" H 10422 2402 60  0000 R CNN
+F 2 "Custom Github:Pin_Header_Straight_1x02" H 10550 2450 60  0001 C CNN
+F 3 "" H 10550 2450 60  0000 C CNN
+	1    10550 2450
+	-1   0    0    -1  
+$EndComp
+Text Label 9850 3050 0    50   ~ 0
+Output-GND
+Wire Wire Line
+	9850 2950 10450 2950
+Wire Wire Line
+	9850 3050 10350 3050
+$Comp
+L power:GND #PWR0126
+U 1 1 5BCDF699
+P 10350 3150
+F 0 "#PWR0126" H 10350 2900 50  0001 C CNN
+F 1 "GND" H 10350 3000 50  0000 C CNN
+F 2 "" H 10350 3150 50  0001 C CNN
+F 3 "" H 10350 3150 50  0001 C CNN
+	1    10350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 3150 10350 3050
+Connection ~ 10350 3050
+Wire Wire Line
+	10350 3050 10450 3050
+$Comp
+L Custom_Library:Header_1X2 J4
+U 1 1 5BCDF6A2
+P 10550 3000
+F 0 "J4" H 10422 3058 60  0000 R CNN
+F 1 "PSU Out" H 10422 2952 60  0000 R CNN
+F 2 "Custom Github:Terminal_Block-5mm" H 10550 3000 60  0001 C CNN
+F 3 "" H 10550 3000 60  0000 C CNN
+	1    10550 3000
+	-1   0    0    -1  
+$EndComp
+Text Label 9850 2950 0    50   ~ 0
+Output-Buck
+$Comp
+L Custom_Library:Header_1X3 J5
+U 1 1 5BCE55B1
+P 650 5100
+F 0 "J5" H 600 5400 60  0000 C CNN
+F 1 "Select" H 675 5300 60  0000 C CNN
+F 2 "Custom Github:Pin_Header_Straight_1x03" H 650 5100 60  0001 C CNN
+F 3 "" H 650 5100 60  0000 C CNN
+	1    650  5100
+	1    0    0    -1  
+$EndComp
+Text Label 1300 5000 2    50   ~ 0
+Output-Linear
+Text Label 1250 5200 2    50   ~ 0
+Output-Buck
+Wire Wire Line
+	750  5100 1350 5100
+Wire Wire Line
+	1300 5000 750  5000
+Wire Wire Line
+	1250 5200 750  5200
 $EndSCHEMATC
