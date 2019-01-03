@@ -1,0 +1,33 @@
+update=10/20/18 16:19:19
+version=1
+last_client=pcbnew
+[general]
+version=1
+RootSch=
+BoardNm=
+[cvpcb]
+version=1
+NetIExt=net
+[eeschema]
+version=1
+LibDir=
+[eeschema/libraries]
+[pcbnew]
+version=1
+PageLayoutDescrFile=
+LastNetListRead=PSU 4CH V1.net
+PadDrill=1.6
+PadDrillOvalY=1.6
+PadSizeH=3.2
+PadSizeV=3.2
+PcbTextSizeV=1.5
+PcbTextSizeH=1.5
+PcbTextThickness=0.3
+ModuleTextSizeV=1
+ModuleTextSizeH=1
+ModuleTextSizeThickness=0.15
+SolderMaskClearance=0.2
+SolderMaskMinWidth=0
+DrawSegmentWidth=0.2
+BoardOutlineThickness=0.15
+ModuleOutlineThickness=0.15
