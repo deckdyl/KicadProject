@@ -1,0 +1,689 @@
+EESchema Schematic File Version 4
+LIBS:Version 4-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title "Commercial PSU Linear Regulator Section"
+Date "2019-07-07"
+Rev "4"
+Comp "QuadTouch Engineering"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Look at Attachment for more information"
+$EndDescr
+$Comp
+L Device:Q_PMOS_GDS Q6
+U 1 1 5D0F19DF
+P 5800 4700
+F 0 "Q6" H 5975 4725 50  0000 L CNN
+F 1 "IPD90P03P4L-04" H 5975 4650 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:TO-252-3_TabPin2" H 6000 4800 50  0001 C CNN
+F 3 "~" H 5800 4700 50  0001 C CNN
+	1    5800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R59
+U 1 1 5D0F1A38
+P 5900 5250
+F 0 "R59" H 5950 5325 50  0000 L CNN
+F 1 "47kΩ" H 5950 5250 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5830 5250 50  0001 C CNN
+F 3 "~" H 5900 5250 50  0001 C CNN
+F 4 "0.1%" H 5950 5175 50  0000 L CNN "Tolerance"
+	1    5900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R60
+U 1 1 5D0F1B18
+P 5900 5750
+F 0 "R60" H 5950 5825 50  0000 L CNN
+F 1 "4.7kΩ" H 5950 5750 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5830 5750 50  0001 C CNN
+F 3 "~" H 5900 5750 50  0001 C CNN
+F 4 "0.1%" H 5950 5675 50  0000 L CNN "Tolerance"
+	1    5900 5750
+	1    0    0    -1  
+$EndComp
+Text Label 6050 6000 0    50   ~ 0
+LinearOutputGND
+$Comp
+L Device:R R58
+U 1 1 5D0F8F25
+P 5400 4450
+F 0 "R58" H 5450 4500 50  0000 L CNN
+F 1 "1kΩ" H 5450 4425 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5330 4450 50  0001 C CNN
+F 3 "~" H 5400 4450 50  0001 C CNN
+F 4 "0.1%" H 5450 4375 50  0001 L CNN "Tolerance"
+	1    5400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q5
+U 1 1 5D0F9045
+P 5300 5000
+F 0 "Q5" H 5475 5050 50  0000 L CNN
+F 1 "2N3904" H 5475 4975 50  0000 L CNN
+F 2 "CustomFootprint:TO-92_Inline_Wide" H 5500 5100 50  0001 C CNN
+F 3 "~" H 5300 5000 50  0001 C CNN
+	1    5300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4600 5400 4700
+Connection ~ 5400 4700
+Wire Wire Line
+	5400 4700 5400 4800
+Wire Wire Line
+	5400 4700 5600 4700
+$Comp
+L Device:R R57
+U 1 1 5D0F95DA
+P 4950 5000
+F 0 "R57" V 4800 5000 50  0000 C CNN
+F 1 "47kΩ" V 4875 5000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4880 5000 50  0001 C CNN
+F 3 "~" H 4950 5000 50  0001 C CNN
+	1    4950 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Custom_Library:LM324 U?
+U 4 1 5D0F9934
+P 4400 5000
+AR Path="/5D0E99D9/5D0F9934" Ref="U?"  Part="3" 
+AR Path="/5D3C05D4/5D0F9934" Ref="U17"  Part="4" 
+F 0 "U17" H 4675 4950 60  0000 C CNN
+F 1 "OPA4277" H 4600 4850 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4400 5000 60  0001 C CNN
+F 3 "" H 4400 5000 60  0000 C CNN
+	4    4400 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5100 4000 5100
+Wire Wire Line
+	4000 5100 4000 5500
+$Comp
+L Custom_Library:LM324 U?
+U 3 1 5D0F9B97
+P 7800 2200
+AR Path="/5D0E99D9/5D0F9B97" Ref="U?"  Part="3" 
+AR Path="/5D3C05D4/5D0F9B97" Ref="U17"  Part="3" 
+F 0 "U17" H 8075 2250 60  0000 C CNN
+F 1 "OPA4277" H 8000 2350 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 7800 2200 60  0001 C CNN
+F 3 "" H 7800 2200 60  0000 C CNN
+	3    7800 2200
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R56
+U 1 1 5D0F9BF1
+P 7800 1500
+F 0 "R56" V 7650 1500 50  0000 C CNN
+F 1 "100kΩ" V 7725 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7730 1500 50  0001 C CNN
+F 3 "~" H 7800 1500 50  0001 C CNN
+F 4 "0.1%" V 7875 1500 50  0000 C CNN "Tolerance"
+	1    7800 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R55
+U 1 1 5D0FA5EF
+P 7150 2100
+F 0 "R55" V 7000 2100 50  0000 C CNN
+F 1 "100kΩ" V 7075 2100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7080 2100 50  0001 C CNN
+F 3 "~" H 7150 2100 50  0001 C CNN
+F 4 "0.1%" V 7225 2100 50  0000 C CNN "Tolerance"
+	1    7150 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 2100 7400 2100
+Wire Wire Line
+	7400 1500 7650 1500
+Connection ~ 7400 2100
+Wire Wire Line
+	7400 2100 7500 2100
+$Comp
+L power:GND #PWR0145
+U 1 1 5D0FAAE6
+P 7500 2300
+F 0 "#PWR0145" H 7500 2050 50  0001 C CNN
+F 1 "GND" H 7500 2150 50  0000 C CNN
+F 2 "" H 7500 2300 50  0001 C CNN
+F 3 "" H 7500 2300 50  0001 C CNN
+	1    7500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C49
+U 1 1 5D0FABA9
+P 7800 2650
+F 0 "C49" H 7800 2750 50  0000 L CNN
+F 1 "100nF" H 7800 2550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7838 2500 50  0001 C CNN
+F 3 "~" H 7800 2650 50  0001 C CNN
+	1    7800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 5D0FB4B9
+P 7800 2800
+F 0 "#PWR0146" H 7800 2550 50  0001 C CNN
+F 1 "GND" H 7800 2650 50  0000 C CNN
+F 2 "" H 7800 2800 50  0001 C CNN
+F 3 "" H 7800 2800 50  0001 C CNN
+	1    7800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Library:LM324 U?
+U 2 1 5D0FB57B
+P 6500 2100
+AR Path="/5D0E99D9/5D0FB57B" Ref="U?"  Part="3" 
+AR Path="/5D3C05D4/5D0FB57B" Ref="U17"  Part="2" 
+F 0 "U17" H 6775 2150 60  0000 C CNN
+F 1 "OPA4277" H 6700 2250 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 6500 2100 60  0001 C CNN
+F 3 "" H 6500 2100 60  0000 C CNN
+	2    6500 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R54
+U 1 1 5D0FB62A
+P 6500 1650
+F 0 "R54" V 6350 1650 50  0000 C CNN
+F 1 "100kΩ" V 6425 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6430 1650 50  0001 C CNN
+F 3 "~" H 6500 1650 50  0001 C CNN
+F 4 "0.1%" V 6575 1650 50  0000 C CNN "Tolerance"
+	1    6500 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R53
+U 1 1 5D0FB6BF
+P 5850 2000
+F 0 "R53" V 5700 2000 50  0000 C CNN
+F 1 "100kΩ" V 5775 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5780 2000 50  0001 C CNN
+F 3 "~" H 5850 2000 50  0001 C CNN
+F 4 "0.1%" V 5925 2000 50  0000 C CNN "Tolerance"
+	1    5850 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R52
+U 1 1 5D0FB703
+P 5850 1650
+F 0 "R52" V 5700 1650 50  0000 C CNN
+F 1 "100kΩ" V 5775 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5780 1650 50  0001 C CNN
+F 3 "~" H 5850 1650 50  0001 C CNN
+F 4 "0.1%" V 5925 1650 50  0000 C CNN "Tolerance"
+	1    5850 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 1650 6100 1650
+Text HLabel 1300 1650 0    50   Input ~ 0
+Linear_DAC
+$Comp
+L Device:CP C?
+U 1 1 5D12347C
+P 6300 5250
+AR Path="/5D0E99D9/5D12347C" Ref="C?"  Part="1" 
+AR Path="/5D3C05D4/5D12347C" Ref="C52"  Part="1" 
+F 0 "C52" H 6300 5350 50  0000 L CNN
+F 1 "47uF" H 6300 5175 50  0000 L CNN
+F 2 "CustomFootprint:Radial-6mm-Pitch-2.5mm-Pin-0.6mm" H 6338 5100 50  0001 C CNN
+F 3 "~" H 6300 5250 50  0001 C CNN
+F 4 "50V" H 6375 5100 50  0000 C CNN "Voltage"
+	1    6300 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D123483
+P 6300 5600
+AR Path="/5D0E99D9/5D123483" Ref="#PWR?"  Part="1" 
+AR Path="/5D3C05D4/5D123483" Ref="#PWR0150"  Part="1" 
+F 0 "#PWR0150" H 6300 5350 50  0001 C CNN
+F 1 "GND" H 6300 5450 50  0000 C CNN
+F 2 "" H 6300 5600 50  0001 C CNN
+F 3 "" H 6300 5600 50  0001 C CNN
+	1    6300 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5600 6300 5500
+Wire Wire Line
+	6300 5500 6550 5500
+Wire Wire Line
+	6550 5500 6550 5400
+Connection ~ 6300 5500
+Wire Wire Line
+	6300 5500 6300 5400
+Wire Wire Line
+	6550 5100 6550 5000
+Wire Wire Line
+	6550 5000 6300 5000
+Wire Wire Line
+	6300 5100 6300 5000
+Connection ~ 6300 5000
+Wire Wire Line
+	6300 5000 5900 5000
+$Comp
+L Device:CP C?
+U 1 1 5D123494
+P 6550 5250
+AR Path="/5D0E99D9/5D123494" Ref="C?"  Part="1" 
+AR Path="/5D3C05D4/5D123494" Ref="C53"  Part="1" 
+F 0 "C53" H 6550 5350 50  0000 L CNN
+F 1 "47uF" H 6550 5175 50  0000 L CNN
+F 2 "CustomFootprint:Radial-6mm-Pitch-2.5mm-Pin-0.6mm" H 6588 5100 50  0001 C CNN
+F 3 "~" H 6550 5250 50  0001 C CNN
+F 4 "50V" H 6625 5100 50  0000 C CNN "Voltage"
+	1    6550 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom_Library:Header_1X2 J?
+U 1 1 5D12349B
+P 7250 5050
+AR Path="/5D0E99D9/5D12349B" Ref="J?"  Part="1" 
+AR Path="/5D3C05D4/5D12349B" Ref="J22"  Part="1" 
+F 0 "J22" H 7250 5200 60  0000 R CNN
+F 1 "Vout" H 7250 4900 60  0000 R CNN
+F 2 "CustomFootprint:Terminal_Block-5mm" H 7250 5050 60  0001 C CNN
+F 3 "" H 7250 5050 60  0000 C CNN
+	1    7250 5050
+	-1   0    0    -1  
+$EndComp
+Text Label 6650 5000 0    50   ~ 0
+LinearOutput
+Wire Wire Line
+	6550 5000 7150 5000
+Connection ~ 6550 5000
+Wire Wire Line
+	7150 5100 7050 5100
+Wire Wire Line
+	7050 5100 7050 6000
+Wire Wire Line
+	5200 1650 5700 1650
+$Comp
+L Custom_Library:LM324 U?
+U 1 1 5D131DBE
+P 5200 2450
+AR Path="/5D0E99D9/5D131DBE" Ref="U?"  Part="3" 
+AR Path="/5D3C05D4/5D131DBE" Ref="U17"  Part="1" 
+F 0 "U17" H 5475 2500 60  0000 C CNN
+F 1 "OPA4277" H 5400 2600 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 5200 2450 60  0001 C CNN
+F 3 "" H 5200 2450 60  0000 C CNN
+	1    5200 2450
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R51
+U 1 1 5D131DC5
+P 5200 2000
+F 0 "R51" V 5050 2000 50  0000 C CNN
+F 1 "100kΩ" V 5125 2000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5130 2000 50  0001 C CNN
+F 3 "~" H 5200 2000 50  0001 C CNN
+F 4 "0.1%" V 5275 2000 50  0000 C CNN "Tolerance"
+	1    5200 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 2450 5500 2450
+$Comp
+L Device:R R50
+U 1 1 5D131DCE
+P 4550 2350
+F 0 "R50" V 4400 2350 50  0000 C CNN
+F 1 "100kΩ" V 4475 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4480 2350 50  0001 C CNN
+F 3 "~" H 4550 2350 50  0001 C CNN
+F 4 "0.1%" V 4625 2350 50  0000 C CNN "Tolerance"
+	1    4550 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 2350 4800 2350
+Wire Wire Line
+	4800 2000 5050 2000
+Connection ~ 4800 2350
+Wire Wire Line
+	4800 2350 4900 2350
+$Comp
+L power:GND #PWR0151
+U 1 1 5D131DD9
+P 4900 2550
+F 0 "#PWR0151" H 4900 2300 50  0001 C CNN
+F 1 "GND" H 4900 2400 50  0000 C CNN
+F 2 "" H 4900 2550 50  0001 C CNN
+F 3 "" H 4900 2550 50  0001 C CNN
+	1    4900 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1650 6900 1650
+Connection ~ 6100 1650
+Wire Wire Line
+	6100 1650 6350 1650
+$Comp
+L Device:C C48
+U 1 1 5D1440DD
+P 8050 1800
+F 0 "C48" V 7925 1800 50  0000 C CNN
+F 1 "100nF" V 8175 1800 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 8088 1650 50  0001 C CNN
+F 3 "~" H 8050 1800 50  0001 C CNN
+	1    8050 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 1500 8400 2200
+Wire Wire Line
+	7400 1500 7400 2100
+Wire Wire Line
+	7900 1800 7800 1800
+Wire Wire Line
+	7800 1800 7800 1900
+$Comp
+L power:GND #PWR0152
+U 1 1 5D14FF2E
+P 8300 1900
+F 0 "#PWR0152" H 8300 1650 50  0001 C CNN
+F 1 "GND" H 8300 1750 50  0000 C CNN
+F 2 "" H 8300 1900 50  0001 C CNN
+F 3 "" H 8300 1900 50  0001 C CNN
+	1    8300 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 1800 8300 1800
+Wire Wire Line
+	8300 1800 8300 1900
+Wire Wire Line
+	8100 2200 8400 2200
+Connection ~ 8400 2200
+Wire Wire Line
+	7950 1500 8400 1500
+$Comp
+L power:GND #PWR0153
+U 1 1 5D16584A
+P 6200 2200
+F 0 "#PWR0153" H 6200 1950 50  0001 C CNN
+F 1 "GND" H 6200 2050 50  0000 C CNN
+F 2 "" H 6200 2200 50  0001 C CNN
+F 3 "" H 6200 2200 50  0001 C CNN
+	1    6200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 5D167733
+P 6500 4350
+AR Path="/5D0E99D9/5D167733" Ref="C?"  Part="1" 
+AR Path="/5D3C05D4/5D167733" Ref="C50"  Part="1" 
+F 0 "C50" H 6500 4450 50  0000 L CNN
+F 1 "47uF" H 6500 4275 50  0000 L CNN
+F 2 "CustomFootprint:Radial-6mm-Pitch-2.5mm-Pin-0.6mm" H 6538 4200 50  0001 C CNN
+F 3 "~" H 6500 4350 50  0001 C CNN
+F 4 "50V" H 6575 4200 50  0000 C CNN "Voltage"
+	1    6500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D167739
+P 6750 4700
+AR Path="/5D0E99D9/5D167739" Ref="#PWR?"  Part="1" 
+AR Path="/5D3C05D4/5D167739" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 6750 4450 50  0001 C CNN
+F 1 "GND" H 6750 4550 50  0000 C CNN
+F 2 "" H 6750 4700 50  0001 C CNN
+F 3 "" H 6750 4700 50  0001 C CNN
+	1    6750 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 4600 6750 4600
+Wire Wire Line
+	6750 4600 6750 4500
+Wire Wire Line
+	6500 4600 6500 4500
+Wire Wire Line
+	6750 4200 6750 4100
+Wire Wire Line
+	6750 4100 6500 4100
+Wire Wire Line
+	6500 4200 6500 4100
+Connection ~ 6500 4100
+$Comp
+L Device:CP C?
+U 1 1 5D16774A
+P 6750 4350
+AR Path="/5D0E99D9/5D16774A" Ref="C?"  Part="1" 
+AR Path="/5D3C05D4/5D16774A" Ref="C51"  Part="1" 
+F 0 "C51" H 6750 4450 50  0000 L CNN
+F 1 "47uF" H 6750 4275 50  0000 L CNN
+F 2 "CustomFootprint:Radial-6mm-Pitch-2.5mm-Pin-0.6mm" H 6788 4200 50  0001 C CNN
+F 3 "~" H 6750 4350 50  0001 C CNN
+F 4 "50V" H 6825 4200 50  0000 C CNN "Voltage"
+	1    6750 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4700 6750 4600
+Connection ~ 6750 4600
+Wire Wire Line
+	5900 4100 5400 4100
+Wire Wire Line
+	5400 4100 5400 4300
+Wire Wire Line
+	5900 4100 5900 4500
+$Comp
+L Custom_Library:Header_1X2 J?
+U 1 1 5D1769FF
+P 7350 4150
+AR Path="/5D0E99D9/5D1769FF" Ref="J?"  Part="1" 
+AR Path="/5D3C05D4/5D1769FF" Ref="J21"  Part="1" 
+F 0 "J21" H 7350 4300 60  0000 R CNN
+F 1 "Vin" H 7350 4000 60  0000 R CNN
+F 2 "CustomFootprint:Terminal_Block-5mm" H 7350 4150 60  0001 C CNN
+F 3 "" H 7350 4150 60  0000 C CNN
+	1    7350 4150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 4200 7150 4600
+Wire Wire Line
+	7150 4200 7250 4200
+Wire Wire Line
+	6750 4600 7150 4600
+Wire Wire Line
+	7250 4100 6750 4100
+Connection ~ 6750 4100
+Text Label 3600 4900 0    50   ~ 0
+LinearVset
+Wire Wire Line
+	3600 4900 4100 4900
+Text Label 8900 2200 2    50   ~ 0
+LinearVset
+Wire Wire Line
+	8400 2200 8900 2200
+Wire Wire Line
+	5900 4900 5900 5000
+Wire Wire Line
+	5900 5000 5900 5100
+Connection ~ 5900 5000
+Text Notes 1000 950  0    79   ~ 16
+Connector
+Text HLabel 1300 1450 0    50   UnSpc ~ 0
++5V
+Text HLabel 1300 2150 0    50   UnSpc ~ 0
+GND
+Text HLabel 1300 2250 0    50   UnSpc ~ 0
+-3V3
+Text HLabel 1300 2350 0    50   UnSpc ~ 0
+-5V
+Text HLabel 1300 1950 0    50   Output ~ 0
+LinearOutputGND
+$Comp
+L power:GND #PWR0157
+U 1 1 5D19775E
+P 2100 2250
+F 0 "#PWR0157" H 2100 2000 50  0001 C CNN
+F 1 "GND" H 2105 2077 50  0000 C CNN
+F 2 "" H 2100 2250 50  0001 C CNN
+F 3 "" H 2100 2250 50  0001 C CNN
+	1    2100 2250
+	1    0    0    -1  
+$EndComp
+Text Label 2000 1950 2    50   ~ 0
+LinearOutputGND
+Wire Wire Line
+	2000 1950 1300 1950
+Text HLabel 1300 1750 0    50   Input ~ 0
+LinearOffsetVref
+Text Label 2000 1750 2    50   ~ 0
+LinearOffsetVref
+Wire Wire Line
+	2000 1750 1300 1750
+Text Label 3800 2350 0    50   ~ 0
+LinearOffsetVref
+Text Notes 5700 950  0    79   ~ 16
+Control Voltage Compensator
+Wire Notes Line
+	11150 3100 500  3100
+Wire Notes Line
+	2300 500  2300 3100
+Text Notes 5200 3550 0    79   ~ 16
+Linear Regulator Section
+Text HLabel 1300 1850 0    50   Output ~ 0
+LinearOutput
+Text Label 2000 1850 2    50   ~ 0
+LinearOutput
+Wire Wire Line
+	2000 1850 1300 1850
+Text Label 2000 1650 2    50   ~ 0
+Linear_DAC
+Wire Wire Line
+	2000 1650 1300 1650
+Text Label 5200 1650 0    50   ~ 0
+Linear_DAC
+Wire Wire Line
+	3800 2350 4400 2350
+$Comp
+L power:GND #PWR?
+U 1 1 5DD0EAA0
+P 5900 5900
+AR Path="/5D0E99D9/5DD0EAA0" Ref="#PWR?"  Part="1" 
+AR Path="/5D3C05D4/5DD0EAA0" Ref="#PWR0212"  Part="1" 
+F 0 "#PWR0212" H 5900 5650 50  0001 C CNN
+F 1 "GND" H 5900 5750 50  0000 C CNN
+F 2 "" H 5900 5900 50  0001 C CNN
+F 3 "" H 5900 5900 50  0001 C CNN
+	1    5900 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 6000 7050 6000
+Wire Wire Line
+	5900 4100 6500 4100
+Connection ~ 5900 4100
+Wire Wire Line
+	6000 2000 6100 2000
+Wire Wire Line
+	6800 2100 6900 2100
+Wire Wire Line
+	6900 1650 6900 2100
+Connection ~ 6900 2100
+Wire Wire Line
+	6900 2100 7000 2100
+Wire Wire Line
+	6100 1650 6100 2000
+Connection ~ 6100 2000
+Wire Wire Line
+	6100 2000 6200 2000
+Wire Wire Line
+	5350 2000 5600 2000
+Wire Wire Line
+	4800 2000 4800 2350
+Wire Wire Line
+	5600 2000 5600 2450
+Connection ~ 5600 2000
+Wire Wire Line
+	5600 2000 5700 2000
+Wire Wire Line
+	5900 5400 5900 5500
+Wire Wire Line
+	4700 5000 4800 5000
+Wire Wire Line
+	4000 5500 5900 5500
+Connection ~ 5900 5500
+Wire Wire Line
+	5900 5500 5900 5600
+$Comp
+L Mechanical:Heatsink_Pad HS2
+U 1 1 5D2B70D9
+P 5900 3900
+F 0 "HS2" H 6025 3975 50  0000 L CNN
+F 1 "Heatsink_Pad" H 6025 3875 50  0000 L CNN
+F 2 "CustomFootprint:Heatsink_SMD_D2PAK" H 5912 3850 50  0001 C CNN
+F 3 "~" H 5912 3850 50  0001 C CNN
+	1    5900 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4000 5900 4100
+Wire Wire Line
+	2100 2250 2100 2150
+Wire Wire Line
+	1300 2150 2100 2150
+Text Label 2000 2250 2    50   ~ 0
+-3V3-4
+Text Label 2000 2350 2    50   ~ 0
+-5V-4
+Wire Wire Line
+	2000 2350 1300 2350
+Wire Wire Line
+	1300 2250 2000 2250
+Text Label 2000 1450 2    50   ~ 0
++5V-4
+Wire Wire Line
+	1300 1450 2000 1450
+Text Label 4100 4600 0    50   ~ 0
++5V-4
+Wire Wire Line
+	4400 4600 4400 4700
+Text Label 4100 5400 0    50   ~ 0
+-5V-4
+Wire Wire Line
+	4400 5400 4400 5300
+Text Label 5000 5300 0    50   ~ 0
+-3V3-4
+Wire Wire Line
+	5400 5200 5400 5300
+Wire Wire Line
+	4100 4600 4400 4600
+Wire Wire Line
+	4100 5400 4400 5400
+Wire Wire Line
+	5000 5300 5400 5300
+$EndSCHEMATC

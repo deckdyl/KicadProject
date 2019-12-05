@@ -1,0 +1,449 @@
+EESchema Schematic File Version 4
+LIBS:Peak Voltage Detector Version2-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "Peak Voltage Detector"
+Date "2019-04-07"
+Rev "1"
+Comp "QuadTouch Engineering"
+Comment1 "Max Voltage Detection Schematic"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 4600 3300 0    50   Input ~ 0
+SignalIn
+$Comp
+L Device:R R90
+U 1 1 5CE3903E
+P 4750 3300
+F 0 "R90" V 4600 3300 50  0000 C CNN
+F 1 "100kΩ" V 4675 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4680 3300 50  0001 C CNN
+F 3 "~" H 4750 3300 50  0001 C CNN
+	1    4750 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT POT?
+U 1 1 5CE3A4F5
+P 3550 3900
+AR Path="/5CD74ABA/5CE3A4F5" Ref="POT?"  Part="1" 
+AR Path="/5CE38FAA/5CE3A4F5" Ref="POT2"  Part="1" 
+F 0 "POT2" H 3750 4050 50  0000 R CNN
+F 1 "10kΩ" H 3750 3750 50  0000 R CNN
+F 2 "CustomFootprint:Potentiometer_Bourns_3386" H 3550 3900 50  0001 C CNN
+F 3 "~" H 3550 3900 50  0001 C CNN
+	1    3550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE3A4FC
+P 4750 4000
+AR Path="/5CD74ABA/5CE3A4FC" Ref="R?"  Part="1" 
+AR Path="/5CE38FAA/5CE3A4FC" Ref="R91"  Part="1" 
+F 0 "R91" V 4600 4000 50  0000 C CNN
+F 1 "100kΩ" V 4675 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4680 4000 50  0001 C CNN
+F 3 "~" H 4750 4000 50  0001 C CNN
+	1    4750 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CE3A505
+P 3250 3900
+AR Path="/5CD74ABA/5CE3A505" Ref="C?"  Part="1" 
+AR Path="/5CE38FAA/5CE3A505" Ref="C44"  Part="1" 
+F 0 "C44" H 3250 4000 50  0000 L CNN
+F 1 "100nF" H 3250 3800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3288 3750 50  0001 C CNN
+F 3 "~" H 3250 3900 50  0001 C CNN
+	1    3250 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4150 3550 4150
+Wire Wire Line
+	3550 3750 3550 3650
+Wire Wire Line
+	3550 3650 3250 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5CE3A50F
+P 3550 4250
+AR Path="/5CD74ABA/5CE3A50F" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE3A50F" Ref="#PWR0204"  Part="1" 
+F 0 "#PWR0204" H 3550 4000 50  0001 C CNN
+F 1 "GND" H 3550 4100 50  0000 C CNN
+F 2 "" H 3550 4250 50  0001 C CNN
+F 3 "" H 3550 4250 50  0001 C CNN
+	1    3550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CE3A515
+P 3250 3550
+AR Path="/5CD74ABA/5CE3A515" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE3A515" Ref="#PWR0205"  Part="1" 
+F 0 "#PWR0205" H 3250 3400 50  0001 C CNN
+F 1 "+5V" H 3250 3700 50  0000 C CNN
+F 2 "" H 3250 3550 50  0001 C CNN
+F 3 "" H 3250 3550 50  0001 C CNN
+	1    3250 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4150 3550 4250
+Wire Wire Line
+	3250 3650 3250 3750
+Wire Wire Line
+	3250 4050 3250 4150
+Wire Wire Line
+	3550 4050 3550 4150
+Connection ~ 3550 4150
+$Comp
+L Custom_Library:LM358 U?
+U 2 1 5CE3A520
+P 4100 4000
+AR Path="/5CD74ABA/5CE3A520" Ref="U?"  Part="2" 
+AR Path="/5CE38FAA/5CE3A520" Ref="U25"  Part="2" 
+F 0 "U25" H 4250 3950 60  0000 L CNN
+F 1 "LM4565" H 4100 3850 60  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 4100 4000 60  0001 C CNN
+F 3 "" H 4100 4000 60  0000 C CNN
+	2    4100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3550 3250 3650
+Connection ~ 3250 3650
+Wire Wire Line
+	3800 4100 3700 4100
+$Comp
+L power:+5V #PWR?
+U 1 1 5CE3A52E
+P 4100 3700
+AR Path="/5CD74ABA/5CE3A52E" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE3A52E" Ref="#PWR0206"  Part="1" 
+F 0 "#PWR0206" H 4100 3550 50  0001 C CNN
+F 1 "+5V" H 4100 3850 50  0000 C CNN
+F 2 "" H 4100 3700 50  0001 C CNN
+F 3 "" H 4100 3700 50  0001 C CNN
+	1    4100 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 5CE3A534
+P 4100 4300
+AR Path="/5CD74ABA/5CE3A534" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE3A534" Ref="#PWR0207"  Part="1" 
+F 0 "#PWR0207" H 4100 4400 50  0001 C CNN
+F 1 "-5V" H 4100 4450 50  0000 C CNN
+F 2 "" H 4100 4300 50  0001 C CNN
+F 3 "" H 4100 4300 50  0001 C CNN
+	1    4100 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 4100 3700 4500
+$Comp
+L Custom_Library:LM358 U?
+U 1 1 5CE3A624
+P 5400 3200
+AR Path="/5CD74ABA/5CE3A624" Ref="U?"  Part="2" 
+AR Path="/5CE38FAA/5CE3A624" Ref="U26"  Part="1" 
+F 0 "U26" H 5550 3150 60  0000 L CNN
+F 1 "LM4565" H 5400 3050 60  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 5400 3200 60  0001 C CNN
+F 3 "" H 5400 3200 60  0000 C CNN
+	1    5400 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3300 5000 3300
+Wire Wire Line
+	4900 4000 5000 4000
+Wire Wire Line
+	5000 4000 5000 3300
+Connection ~ 5000 3300
+Wire Wire Line
+	5000 3300 5100 3300
+Wire Wire Line
+	4400 4000 4500 4000
+Wire Wire Line
+	4500 4000 4500 4500
+Wire Wire Line
+	3700 4500 4500 4500
+Connection ~ 4500 4000
+Wire Wire Line
+	4500 4000 4600 4000
+$Comp
+L Device:R R?
+U 1 1 5CE3ADC8
+P 5400 4000
+AR Path="/5CD74ABA/5CE3ADC8" Ref="R?"  Part="1" 
+AR Path="/5CE38FAA/5CE3ADC8" Ref="R92"  Part="1" 
+F 0 "R92" V 5250 4000 50  0000 C CNN
+F 1 "100kΩ" V 5325 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5330 4000 50  0001 C CNN
+F 3 "~" H 5400 4000 50  0001 C CNN
+	1    5400 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 4000 5250 4000
+Connection ~ 5000 4000
+Wire Wire Line
+	5550 4000 5800 4000
+Wire Wire Line
+	5800 4000 5800 3200
+Wire Wire Line
+	5800 3200 5700 3200
+$Comp
+L Device:D D8
+U 1 1 5CE3B16D
+P 6050 3200
+F 0 "D8" H 6050 3300 50  0000 C CNN
+F 1 "1N914" H 6050 3100 50  0000 C CNN
+F 2 "CustomFootprint:1N4148" H 6050 3200 50  0001 C CNN
+F 3 "~" H 6050 3200 50  0001 C CNN
+	1    6050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CE3B26F
+P 5000 3100
+AR Path="/5CD74ABA/5CE3B26F" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE3B26F" Ref="#PWR0208"  Part="1" 
+F 0 "#PWR0208" H 5000 2850 50  0001 C CNN
+F 1 "GND" H 5000 2950 50  0000 C CNN
+F 2 "" H 5000 3100 50  0001 C CNN
+F 3 "" H 5000 3100 50  0001 C CNN
+	1    5000 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3100 5100 3100
+Wire Wire Line
+	5900 3200 5800 3200
+Connection ~ 5800 3200
+$Comp
+L Device:C C45
+U 1 1 5CE3B6FD
+P 6300 3450
+F 0 "C45" H 6415 3496 50  0000 L CNN
+F 1 "470nF" H 6415 3405 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 6338 3300 50  0001 C CNN
+F 3 "~" H 6300 3450 50  0001 C CNN
+	1    6300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3300 6300 3200
+Wire Wire Line
+	6300 3200 6200 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5CE3B9EF
+P 6300 3600
+AR Path="/5CD74ABA/5CE3B9EF" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE3B9EF" Ref="#PWR0209"  Part="1" 
+F 0 "#PWR0209" H 6300 3350 50  0001 C CNN
+F 1 "GND" H 6300 3450 50  0000 C CNN
+F 2 "" H 6300 3600 50  0001 C CNN
+F 3 "" H 6300 3600 50  0001 C CNN
+	1    6300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE3BA0C
+P 6550 3200
+AR Path="/5CD74ABA/5CE3BA0C" Ref="R?"  Part="1" 
+AR Path="/5CE38FAA/5CE3BA0C" Ref="R93"  Part="1" 
+F 0 "R93" V 6400 3200 50  0000 C CNN
+F 1 "100kΩ" V 6475 3200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6480 3200 50  0001 C CNN
+F 3 "~" H 6550 3200 50  0001 C CNN
+	1    6550 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Custom_Library:LM358 U?
+U 2 1 5CE3BA56
+P 7200 3100
+AR Path="/5CD74ABA/5CE3BA56" Ref="U?"  Part="2" 
+AR Path="/5CE38FAA/5CE3BA56" Ref="U26"  Part="2" 
+F 0 "U26" H 7350 3050 60  0000 L CNN
+F 1 "LM4565" H 7200 2950 60  0000 L CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 7200 3100 60  0001 C CNN
+F 3 "" H 7200 3100 60  0000 C CNN
+	2    7200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CE3BAAE
+P 7200 3700
+AR Path="/5CD74ABA/5CE3BAAE" Ref="R?"  Part="1" 
+AR Path="/5CE38FAA/5CE3BAAE" Ref="R94"  Part="1" 
+F 0 "R94" V 7050 3700 50  0000 C CNN
+F 1 "100kΩ" V 7125 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7130 3700 50  0001 C CNN
+F 3 "~" H 7200 3700 50  0001 C CNN
+	1    7200 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C46
+U 1 1 5CE3BB1C
+P 7200 4100
+F 0 "C46" V 6950 4100 50  0000 C CNN
+F 1 "470nF" V 7050 4100 50  0000 C CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 7238 3950 50  0001 C CNN
+F 3 "~" H 7200 4100 50  0001 C CNN
+	1    7200 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 4100 6800 4100
+Wire Wire Line
+	6800 4100 6800 3700
+Wire Wire Line
+	6800 3200 6900 3200
+Wire Wire Line
+	7050 3700 6800 3700
+Connection ~ 6800 3700
+Wire Wire Line
+	6800 3700 6800 3200
+Wire Wire Line
+	6800 3200 6700 3200
+Connection ~ 6800 3200
+Wire Wire Line
+	6400 3200 6300 3200
+Connection ~ 6300 3200
+Wire Wire Line
+	7350 3700 7600 3700
+Wire Wire Line
+	7600 3700 7600 3100
+Wire Wire Line
+	7600 3100 7500 3100
+Wire Wire Line
+	7350 4100 7600 4100
+Wire Wire Line
+	7600 4100 7600 3700
+Connection ~ 7600 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5CE3D464
+P 6800 3000
+AR Path="/5CD74ABA/5CE3D464" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE3D464" Ref="#PWR0210"  Part="1" 
+F 0 "#PWR0210" H 6800 2750 50  0001 C CNN
+F 1 "GND" H 6800 2850 50  0000 C CNN
+F 2 "" H 6800 3000 50  0001 C CNN
+F 3 "" H 6800 3000 50  0001 C CNN
+	1    6800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3000 6900 3000
+Text HLabel 7700 3100 2    50   Output ~ 0
+MaxVoltageDetectionOutput
+Wire Wire Line
+	7700 3100 7600 3100
+Connection ~ 7600 3100
+Text HLabel 3500 2700 0    50   UnSpc ~ 0
++5V
+Text HLabel 3500 2800 0    50   UnSpc ~ 0
+GND
+$Comp
+L power:+5V #PWR?
+U 1 1 5CE3E2F9
+P 3600 2600
+AR Path="/5CD74ABA/5CE3E2F9" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE3E2F9" Ref="#PWR0211"  Part="1" 
+F 0 "#PWR0211" H 3600 2450 50  0001 C CNN
+F 1 "+5V" H 3600 2750 50  0000 C CNN
+F 2 "" H 3600 2600 50  0001 C CNN
+F 3 "" H 3600 2600 50  0001 C CNN
+	1    3600 2600
+	1    0    0    -1  
+$EndComp
+Text HLabel 3500 2900 0    50   UnSpc ~ 0
+-5V
+$Comp
+L power:-5V #PWR?
+U 1 1 5CE3E300
+P 3600 3000
+AR Path="/5CD74ABA/5CE3E300" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE3E300" Ref="#PWR0212"  Part="1" 
+F 0 "#PWR0212" H 3600 3100 50  0001 C CNN
+F 1 "-5V" H 3600 3150 50  0000 C CNN
+F 2 "" H 3600 3000 50  0001 C CNN
+F 3 "" H 3600 3000 50  0001 C CNN
+	1    3600 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CE3E306
+P 3800 3000
+AR Path="/5CD74ABA/5CE3E306" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE3E306" Ref="#PWR0213"  Part="1" 
+F 0 "#PWR0213" H 3800 2750 50  0001 C CNN
+F 1 "GND" H 3800 2850 50  0000 C CNN
+F 2 "" H 3800 3000 50  0001 C CNN
+F 3 "" H 3800 3000 50  0001 C CNN
+	1    3800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3000 3800 2800
+Wire Wire Line
+	3800 2800 3500 2800
+Wire Wire Line
+	3500 2700 3600 2700
+Wire Wire Line
+	3600 2700 3600 2600
+Wire Wire Line
+	3600 3000 3600 2900
+Wire Wire Line
+	3600 2900 3500 2900
+Wire Wire Line
+	3700 3900 3800 3900
+$Comp
+L power:+5V #PWR?
+U 1 1 5CE406D5
+P 5400 2900
+AR Path="/5CD74ABA/5CE406D5" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE406D5" Ref="#PWR0214"  Part="1" 
+F 0 "#PWR0214" H 5400 2750 50  0001 C CNN
+F 1 "+5V" H 5400 3050 50  0000 C CNN
+F 2 "" H 5400 2900 50  0001 C CNN
+F 3 "" H 5400 2900 50  0001 C CNN
+	1    5400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 5CE406FA
+P 5400 3500
+AR Path="/5CD74ABA/5CE406FA" Ref="#PWR?"  Part="1" 
+AR Path="/5CE38FAA/5CE406FA" Ref="#PWR0215"  Part="1" 
+F 0 "#PWR0215" H 5400 3600 50  0001 C CNN
+F 1 "-5V" H 5400 3650 50  0000 C CNN
+F 2 "" H 5400 3500 50  0001 C CNN
+F 3 "" H 5400 3500 50  0001 C CNN
+	1    5400 3500
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC
